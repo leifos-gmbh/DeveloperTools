@@ -1,4 +1,5 @@
 ##Mark as deprecated all the variables that has a corresponding entry in the deprecated CSV file
+file -> mark_deprecated_lang_vars.py
 
 Before execute the script, is highly recommended to duplicate the language file that is wanted to modify
  
@@ -16,4 +17,19 @@ the "lang_deprecated_leg.csv" file. This "lang_deprecated_leg.csv" file must be 
           python mark_deprecated_lang_vars.py
 
 Update language files can take more than one minute, don't interrupt the process.
+
+
+
+#### PARSE ENGLISH VERSION AND UPDATE ALL THE OTHER LANGUAGE FILES
+file -> mark_deprecated_vars_in_other_languages.py
+
+This script parses ilias_en.lang and for each entry that contains "###deprecated" at the end,
+a corresponding comment must be added in all the rest language files.
+
+For each line which contain language string:
+If the line does not contain a "###deprecated" comment, but the entry appears in the english file as deprecated, the comment ###deprecated is added at the end of the line.
+All other comments existing like "###07 02 2017 new variable" are removed
+
+If the line does contain a "###deprecated" comment, but does not appear in english version, it is removed.
+
 
