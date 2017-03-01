@@ -4,17 +4,11 @@ import sys
 import csv
 import os.path
 
-if len(sys.argv) > 1:
-    print ("\n** Updating language file passed as an argument."+sys.argv[1])
-    LANG_FILE = '../../../../lang/'+sys.argv[1]
+if len(sys.argv) is not 3:
+    sys.exit("Error: Invalid number of arguments")
 
-else:
-    print "\n** Updating the current english file => ilias_en.lang"
-    LANG_FILE = '../../../../lang/ilias_en.lang'
-
-print "Please, wait..."
-
-CSV_DEPRECATEDS = 'lang_deprecated_leg.csv'
+LANG_FILE = sys.argv[1]
+CSV_DEPRECATEDS = sys.argv[2]
 
 if not os.path.isfile(LANG_FILE):
     sys.exit("Error: Lang File not found => "+LANG_FILE)
@@ -22,16 +16,15 @@ if not os.path.isfile(LANG_FILE):
 if not os.path.isfile(CSV_DEPRECATEDS):
     sys.exit("Error: File with deprecated values is not found => "+CSV_DEPRECATEDS)
 
-with open(CSV_DEPRECATEDS, 'rb') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        string_to_search = row[0]+"#:#"+row[1]+"#:#"
-        fh = fileinput.input(LANG_FILE, inplace=True)
-        for line in fh:
-            if string_to_search in line:
-                line = line.replace('\n', '')
-                sys.stdout.write(line + "###deprecated \n")
-            else:
-                sys.stdout.write(line)
-        fh.close()
+deprecated = set(line.strip() for line in open(CSV_DEPRECATEDS))
+
+fh = fileinput.input(LANG_FILE, inplace=True)
+for line in fh:
+    cols = line.split("#:#")
+    if (len(cols) == 3 and cols[0]+","+cols[1] in deprecated):
+        line = line.replace('\n', '')
+        sys.stdout.write(line + "###deprecated \n")
+    else:
+        sys.stdout.write(line)
+fh.close()
 print "Done."
