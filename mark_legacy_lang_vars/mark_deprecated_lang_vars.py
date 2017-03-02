@@ -21,10 +21,14 @@ deprecated = set(line.strip() for line in open(CSV_DEPRECATEDS))
 fh = fileinput.input(LANG_FILE, inplace=True)
 for line in fh:
     cols = line.split("#:#")
-    if (len(cols) == 3 and cols[0]+","+cols[1] in deprecated):
-        line = line.replace('\n', '')
-        sys.stdout.write(line + "###deprecated \n")
+    if len(cols) == 3 and cols[0]+","+cols[1] in deprecated:
+        if "###deprecated" not in line:
+            line = line.replace('\n', '')
+            sys.stdout.write(line + "###deprecated \n")
+        else:
+            sys.stdout.write(line)
     else:
         sys.stdout.write(line)
 fh.close()
+os.remove(CSV_DEPRECATEDS)
 print "Done."
