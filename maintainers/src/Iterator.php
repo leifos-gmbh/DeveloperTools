@@ -71,6 +71,7 @@ class Iterator {
 				}
 				$this->collector->addComponent($Directory->getBelongToComponent());
 			}
+			$Directory->populate();
 			if ($Directory->isMaintained()) {
 				$this->collector->addMaintained($Directory);
 			} else {

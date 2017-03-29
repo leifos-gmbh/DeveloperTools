@@ -38,6 +38,7 @@ class Component extends JsonSerializable {
 		if (!key_exists($name, self::$registredInstances)) {
 			self::$registredInstances[$name] = new self($name);
 		}
+		self::$registredInstances[$name]->populate();
 
 		return self::$registredInstances[$name];
 	}
@@ -183,9 +184,9 @@ class Component extends JsonSerializable {
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getFirstMaintainer(): string {
+	public function getFirstMaintainer(): Maintainer {
 		return $this->first_maintainer;
 	}
 
@@ -199,17 +200,17 @@ class Component extends JsonSerializable {
 
 
 	/**
-	 * @param string $first_maintainer
+	 * @param Maintainer $first_maintainer
 	 */
-	public function setFirstMaintainer(string $first_maintainer) {
+	public function setFirstMaintainer(Maintainer $first_maintainer) {
 		$this->first_maintainer = $first_maintainer;
 	}
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getSecondMaintainer(): string {
+	public function getSecondMaintainer(): Maintainer {
 		return $this->second_maintainer;
 	}
 
@@ -223,17 +224,17 @@ class Component extends JsonSerializable {
 
 
 	/**
-	 * @param string $second_maintainer
+	 * @param Maintainer $second_maintainer
 	 */
-	public function setSecondMaintainer(string $second_maintainer) {
+	public function setSecondMaintainer(Maintainer $second_maintainer) {
 		$this->second_maintainer = $second_maintainer;
 	}
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getTester(): string {
+	public function getTester(): Maintainer {
 		return $this->tester;
 	}
 
@@ -247,17 +248,17 @@ class Component extends JsonSerializable {
 
 
 	/**
-	 * @param string $tester
+	 * @param Maintainer $tester
 	 */
-	public function setTester(string $tester) {
+	public function setTester(Maintainer $tester) {
 		$this->tester = $tester;
 	}
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getTestcaseWriter(): string {
+	public function getTestcaseWriter(): Maintainer {
 		return $this->testcase_writer;
 	}
 
@@ -271,9 +272,9 @@ class Component extends JsonSerializable {
 
 
 	/**
-	 * @param string $testcase_writer
+	 * @param Maintainer $testcase_writer
 	 */
-	public function setTestcaseWriter(string $testcase_writer) {
+	public function setTestcaseWriter(Maintainer $testcase_writer) {
 		$this->testcase_writer = $testcase_writer;
 	}
 
