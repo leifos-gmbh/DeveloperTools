@@ -1,238 +1,4 @@
 The code base is deviced in several components which are maintained in the Classic-Maintenance-Model:
-* **Bibliographic List Item**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Tester: mglaubitz
-	* Used in Directories: 
-* **OrgUnits**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **StudyProgramme**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **ItemGroup**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **DataCollection**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **GlobalCache**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **WebAccessChecker**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **ActiveRecord**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Authentication & Registration**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **BackgroundTasks**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Database**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **ilUtil**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **File**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Excel**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Style**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Component**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **EventHandling**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Initialisation**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Language**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Object**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **TemplateEngine**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **ObjectDefinition**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Learning Module SCORM**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Blog**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Learning Module HTML**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **MediaCast**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Poll**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Portfolio**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Test**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Certificate**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Chat**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Badges**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: tschroeder
-	* Tester: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Used in Directories: 
-* **Booking Manager**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Used in Directories: 
-* **Media Objects**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **User**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Bibliographic**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Booking Tool**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **Cloud**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
-* **UI-Service**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: 
 
 
 The following directories are currently maintained unter the Classic-Maintenace-Model:
@@ -243,7 +9,7 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Services/Accordion
  (1st Maintainer: MISSING)
 * Services/ActiveRecord
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Services/Administration
  (1st Maintainer: MISSING)
 * Services/ADT
@@ -257,11 +23,11 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Services/Authentication
  (1st Maintainer: MISSING)
 * Services/AuthShibboleth
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Services/Awareness
  (1st Maintainer: MISSING)
 * Services/BackgroundTask
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Services/Badge
  (1st Maintainer: MISSING)
 * Services/Block
@@ -302,6 +68,8 @@ The following directories are currently maintained unter the Classic-Maintenace-
  (1st Maintainer: MISSING)
 * Services/Cron
  (1st Maintainer: MISSING)
+* Services/Database
+ (1st Maintainer: MISSING)
 * Services/DataSet
  (1st Maintainer: MISSING)
 * Services/DidacticTemplate
@@ -323,7 +91,7 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Services/Feeds
  (1st Maintainer: MISSING)
 * Services/FileDelivery
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Services/FileSystem
  (1st Maintainer: MISSING)
 * Services/FileUpload
@@ -333,7 +101,7 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Services/Frameset
  (1st Maintainer: MISSING)
 * Services/GlobalCache
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Services/Help
  (1st Maintainer: MISSING)
 * Services/History
@@ -471,7 +239,7 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Services/VirusScanner
  (1st Maintainer: MISSING)
 * Services/WebAccessChecker
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Services/WebDAV
  (1st Maintainer: MISSING)
 * Services/WebServices
@@ -487,7 +255,7 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Services/YUI
  (1st Maintainer: MISSING)
 * Modules/Bibliographic
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Modules/Blog
  (1st Maintainer: MISSING)
 * Modules/BookingManager
@@ -499,19 +267,19 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Modules/Chatroom
  (1st Maintainer: MISSING)
 * Modules/Cloud
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Modules/Course
  (1st Maintainer: MISSING)
 * Modules/CourseReference
  (1st Maintainer: MISSING)
 * Modules/DataCollection
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Modules/Exercise
  (1st Maintainer: MISSING)
 * Modules/ExternalFeed
  (1st Maintainer: MISSING)
 * Modules/File
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Modules/Folder
  (1st Maintainer: MISSING)
 * Modules/Forum
@@ -531,11 +299,11 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Modules/LearningModule
  (1st Maintainer: MISSING)
 * Modules/MediaCast
- (1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html))
+ (1st Maintainer: MISSING)
 * Modules/MediaPool
  (1st Maintainer: MISSING)
 * Modules/OrgUnit
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+ (1st Maintainer: MISSING)
 * Modules/Poll
  (1st Maintainer: MISSING)
 * Modules/Portfolio
@@ -565,7 +333,7 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Modules/Session
  (1st Maintainer: MISSING)
 * Modules/StudyProgramme
- (1st Maintainer: [rklees](http://www.ilias.de/docu/goto_docu_usr_34047.html))
+ (1st Maintainer: MISSING)
 * Modules/Survey
  (1st Maintainer: MISSING)
 * Modules/SurveyQuestionPool
@@ -586,13 +354,11 @@ The following directories are currently maintained unter the Classic-Maintenace-
  (1st Maintainer: MISSING)
 * src/DI
  (1st Maintainer: MISSING)
+* src/UI
+ (1st Maintainer: MISSING)
 
 
 The following directories are currently maintained unter the Service-Maintenace-Model:
-* Services/Database
- (Coordinator: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
-* src/UI
- (Coordinator: [amstutz](http://www.ilias.de/docu/goto_docu_usr_26468.html))
 
 
 The following directories are currently unmaintained:

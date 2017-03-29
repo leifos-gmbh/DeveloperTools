@@ -1,11 +1,11 @@
 {
-    "OrgUnits": {
+    "Organisational Units": {
         "directories": [],
-        "name": "OrgUnits",
+        "name": "Organisational Units",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "second_maintainer": "bheyser(14300)",
+        "tester": "wischniak(21896)",
+        "testcase_writer": "wischniak(21896)",
         "modell": "Classic",
         "coordinators": []
     },
@@ -362,88 +362,30 @@
     "ActiveRecord": {
         "directories": [],
         "name": "ActiveRecord",
-        "first_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "second_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "tester": {
-            "username": "",
-            "user_id": 0
-        },
-        "testcase_writer": {
-            "username": "",
-            "user_id": 0
-        },
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "modell": "Classic",
         "coordinators": []
     },
     "Database": {
         "directories": [],
         "name": "Database",
-        "first_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "second_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "tester": {
-            "username": "",
-            "user_id": 0
-        },
-        "testcase_writer": {
-            "username": "",
-            "user_id": 0
-        },
-        "modell": "Classic",
-        "coordinators": []
-    },
-    "Bibliographic": {
-        "directories": [],
-        "name": "Bibliographic",
-        "first_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "second_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "tester": {
-            "username": "",
-            "user_id": 0
-        },
-        "testcase_writer": {
-            "username": "",
-            "user_id": 0
-        },
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "modell": "Classic",
         "coordinators": []
     },
     "UI-Service": {
         "directories": [],
         "name": "UI-Service",
-        "first_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "second_maintainer": {
-            "username": "",
-            "user_id": 0
-        },
-        "tester": {
-            "username": "",
-            "user_id": 0
-        },
-        "testcase_writer": {
-            "username": "",
-            "user_id": 0
-        },
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "modell": "Classic",
         "coordinators": []
     }

@@ -32,7 +32,7 @@ class Component extends JsonSerializable {
 	 * @return \ILIAS\Tools\Maintainers\Component
 	 */
 	public static function getInstance($name): Component {
-		if (!$name) {
+		if (!$name || !is_string($name)) {
 			$name = "None";
 		}
 		if (!key_exists($name, self::$registredInstances)) {
@@ -44,7 +44,6 @@ class Component extends JsonSerializable {
 
 
 	public function updateFromData(\stdClass $data) {
-
 	}
 
 

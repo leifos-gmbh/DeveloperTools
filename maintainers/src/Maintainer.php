@@ -78,23 +78,22 @@ class Maintainer extends JsonSerializable {
 	 * @return \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	public static function fromString($string) {
-		if (!$string) {
+		if (!is_string($string) || !$string) {
 			return new self();
-		}
-		if (key_exists($string, self::$registeredMaintainers)) {
-			$n = self::$registeredMaintainers[$string];
-		} else {
-			$n = new self();
 		}
 
 		if (preg_match('/(.*)\\(([\\d]*)\\)/uUm', $string, $matches)) {
 			$username = (string)$matches[1];
+			if (key_exists($string, self::$registeredMaintainers)) {
+				$n = self::$registeredMaintainers[$username];
+			} else {
+				$n = new self();
+			}
 			$n->setUsername($username);
 			$user_id = (key_exists($username, self::$registeredMaintainers) ? self::$registeredMaintainers[$username]->getUserId() : (int)$matches[2]);
 			$n->setUserId($user_id);
 		} else {
-			//			$user_id = (key_exists($string, self::$registeredMaintainers) ? self::$registeredMaintainers[$string]->getUserId() : 0);
-			//			$n->setUserId((int)$user_id);
+			$n = new self();
 			$n->setUsername((string)$string);
 		}
 		self::$registeredMaintainers[$n->getUsername()] = $n;

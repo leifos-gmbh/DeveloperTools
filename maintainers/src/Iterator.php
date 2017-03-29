@@ -77,6 +77,7 @@ class Iterator {
 				$this->collector->addUnmaintained($Directory);
 			}
 			$this->getFilesystem()->update($json, $Directory->serializeAsJson());
+//			$this->getFilesystem()->delete($json);
 		}
 	}
 

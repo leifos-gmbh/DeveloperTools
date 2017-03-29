@@ -70,9 +70,11 @@ class Directory extends JsonSerializable {
 	public function isMaintained() {
 		switch ($this->getMaintenanceModel()) {
 			case self::CLASSIC:
-				return ($this->getFirstMaintainer() instanceof Maintainer);
+				return ($this->first_maintainer instanceof Maintainer
+				        || $this->second_maintainer instanceof Maintainer
+				        || count($this->implicit_maintainers) > 0);
 			case self::SERVICE:
-				return ($this->getCoordinator() instanceof Maintainer);
+				return ($this->coordinator instanceof Maintainer);
 			default:
 				return false;
 		}
