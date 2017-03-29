@@ -59,7 +59,9 @@ class MarkdownWriter {
 		 */
 
 		$md = "The code base is deviced in several components which are maintained in the Classic-Maintenance-Model:\n";
-		foreach ($this->getCollector()->getComponents() as $component) {
+		$components = $this->getCollector()->getComponents();
+		sort($components);
+		foreach ($components as $component) {
 			$component->populate();
 			$name = $component->getName();
 			if ($name == 'All' || $name == 'None') {
@@ -82,7 +84,9 @@ class MarkdownWriter {
 		/**
 		 * @var $coordinator \ILIAS\Tools\Maintainers\Maintainer
 		 */
-		foreach ($this->getCollector()->getByModell(Directory::CLASSIC) as $directory) {
+		$directories = $this->getCollector()->getByModell(Directory::CLASSIC);
+		sort($directories);
+		foreach ($directories as $directory) {
 			$directory->populate();
 
 			$md .= "* {$directory->getPath()}\n (1st Maintainer: {$directory->getFirstMaintainer()->getLinkedProfile()})\n";
@@ -92,7 +96,9 @@ class MarkdownWriter {
 		/**
 		 * @var $coordinator \ILIAS\Tools\Maintainers\Maintainer
 		 */
-		foreach ($this->getCollector()->getByModell(Directory::SERVICE) as $directory) {
+		$directories1 = $this->getCollector()->getByModell(Directory::SERVICE);
+		sort($directories1);
+		foreach ($directories1 as $directory) {
 			$directory->populate();
 
 			$md .= "* {$directory->getPath()}\n (Coordinator: {$directory->getCoordinator()->getLinkedProfile()})\n";
@@ -100,7 +106,9 @@ class MarkdownWriter {
 
 		$md .= "\n\nThe following directories are currently unmaintained:\n";
 
-		foreach ($this->getCollector()->getUnmaintained() as $directory) {
+		$directories2 = $this->getCollector()->getUnmaintained();
+		sort($directories2);
+		foreach ($directories2 as $directory) {
 			$directory->populate();
 			$md .= "* {$directory->getPath()}\n";
 		}

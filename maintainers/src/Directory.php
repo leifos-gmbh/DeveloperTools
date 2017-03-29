@@ -271,9 +271,13 @@ class Directory extends JsonSerializable {
 
 	protected function populateComponents() {
 		foreach ($this->used_in_components as $k => $component) {
-			$this->used_in_components[$k] = Component::getInstance($component);
+			$c = Component::getInstance($component);
+			$c->addDirectory($this);
+			$this->used_in_components[$k] = $c;
 		}
-		$this->belong_to_component = Component::getInstance($this->belong_to_component);
+		$c = Component::getInstance($this->belong_to_component);
+		$c->addDirectory($this);
+		$this->belong_to_component = $c;
 	}
 
 

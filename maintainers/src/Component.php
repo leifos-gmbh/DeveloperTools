@@ -44,10 +44,6 @@ class Component extends JsonSerializable {
 	}
 
 
-	public function updateFromData(\stdClass $data) {
-	}
-
-
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Component[]
 	 */
@@ -145,6 +141,7 @@ class Component extends JsonSerializable {
 			}
 			$components[$component->getName()] = $component->serialize();
 		}
+		sort($components);
 
 		$filesystem->update($path_to_file, JsonSerializable::json_encode($components));
 	}
@@ -286,6 +283,10 @@ class Component extends JsonSerializable {
 
 	public function doStringyfy() {
 		$this->stringifyMaintainers();
+
+		foreach ($this->directories as $k => $directory) {
+			$this->directories[$k] = $directory->getPath();
+		}
 	}
 
 

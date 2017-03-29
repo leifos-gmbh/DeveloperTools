@@ -82,6 +82,10 @@ class Maintainer extends JsonSerializable {
 			return new self();
 		}
 
+		if (key_exists($string, self::$registeredMaintainers)) {
+			return self::$registeredMaintainers[$string];
+		}
+
 		if (preg_match('/(.*)\\(([\\d]*)\\)/uUm', $string, $matches)) {
 			$username = (string)$matches[1];
 			if (key_exists($string, self::$registeredMaintainers)) {
