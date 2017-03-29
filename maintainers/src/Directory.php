@@ -2,13 +2,15 @@
 
 namespace ILIAS\Tools\Maintainers;
 
+use PhpParser\Error;
+
 /**
  * Class Directory
  *
  * @author  Fabian Schmid <fs@studer-raimann.ch>
  * @package ILIAS\Tools\Maintainers
  */
-class Directory extends JsonSerializable  {
+class Directory extends JsonSerializable {
 
 	const CLASSIC = 'Classic';
 	const SERVICE = 'Service';
@@ -17,27 +19,27 @@ class Directory extends JsonSerializable  {
 	 */
 	protected $maintenance_model = self::CLASSIC;
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $first_maintainer = '';
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $second_maintainer = '';
 	/**
-	 * @var array
+	 * @var \ILIAS\Tools\Maintainers\Maintainer[]
 	 */
 	protected $implicit_maintainers = array();
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $coordinator = '';
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $tester = '';
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $testcase_writer = '';
 	/**
@@ -45,7 +47,11 @@ class Directory extends JsonSerializable  {
 	 */
 	protected $path = '';
 	/**
-	 * @var array
+	 * @var \ILIAS\Tools\Maintainers\Component
+	 */
+	protected $belong_to_component;
+	/**
+	 * @var \ILIAS\Tools\Maintainers\Component[]
 	 */
 	protected $used_in_components = array();
 
@@ -64,9 +70,9 @@ class Directory extends JsonSerializable  {
 	public function isMaintained() {
 		switch ($this->getMaintenanceModel()) {
 			case self::CLASSIC:
-				return ($this->getFirstMaintainer() != '');
+				return ($this->getFirstMaintainer() instanceof Maintainer);
 			case self::SERVICE:
-				return ($this->getCoordinator() != '');
+				return ($this->getCoordinator() instanceof Maintainer);
 			default:
 				return false;
 		}
@@ -90,57 +96,57 @@ class Directory extends JsonSerializable  {
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getFirstMaintainer(): string {
+	public function getFirstMaintainer(): Maintainer {
 		return $this->first_maintainer;
 	}
 
 
 	/**
-	 * @param string $first_maintainer
+	 * @param Maintainer $first_maintainer
 	 */
-	public function setFirstMaintainer(string $first_maintainer) {
+	public function setFirstMaintainer(Maintainer $first_maintainer) {
 		$this->first_maintainer = $first_maintainer;
 	}
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getSecondMaintainer(): string {
+	public function getSecondMaintainer(): Maintainer {
 		return $this->second_maintainer;
 	}
 
 
 	/**
-	 * @param string $second_maintainer
+	 * @param Maintainer $second_maintainer
 	 */
-	public function setSecondMaintainer(string $second_maintainer) {
+	public function setSecondMaintainer(Maintainer $second_maintainer) {
 		$this->second_maintainer = $second_maintainer;
 	}
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getTester(): string {
+	public function getTester(): Maintainer {
 		return $this->tester;
 	}
 
 
 	/**
-	 * @param string $tester
+	 * @param Maintainer $tester
 	 */
-	public function setTester(string $tester) {
+	public function setTester(Maintainer $tester) {
 		$this->tester = $tester;
 	}
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getTestcaseWriter(): string {
+	public function getTestcaseWriter(): Maintainer {
 		return $this->testcase_writer;
 	}
 
@@ -170,10 +176,10 @@ class Directory extends JsonSerializable  {
 
 
 	/**
-	 * @return array
+	 * @return \ILIAS\Tools\Maintainers\Component[]
 	 */
 	public function getUsedinComponents(): array {
-		return $this->used_in_components ? $this->used_in_components : array( 'None' );
+		return $this->used_in_components;
 	}
 
 
@@ -186,7 +192,7 @@ class Directory extends JsonSerializable  {
 
 
 	/**
-	 * @param array $used_in_components
+	 * @param \ILIAS\Tools\Maintainers\Component[] $used_in_components
 	 */
 	public function setUsedinComponents(array $used_in_components) {
 		$this->used_in_components = $used_in_components;
@@ -194,23 +200,23 @@ class Directory extends JsonSerializable  {
 
 
 	/**
-	 * @return string
+	 * @return Maintainer
 	 */
-	public function getCoordinator(): string {
+	public function getCoordinator(): Maintainer {
 		return $this->coordinator;
 	}
 
 
 	/**
-	 * @param string $coordinator
+	 * @param Maintainer $coordinator
 	 */
-	public function setCoordinator(string $coordinator) {
+	public function setCoordinator(Maintainer $coordinator) {
 		$this->coordinator = $coordinator;
 	}
 
 
 	/**
-	 * @return array
+	 * @return Maintainer[]
 	 */
 	public function getImplicitMaintainers(): array {
 		return $this->implicit_maintainers;
@@ -226,21 +232,38 @@ class Directory extends JsonSerializable  {
 
 
 	/**
-	 * @return \stdClass
+	 * @return \ILIAS\Tools\Maintainers\Component
 	 */
-	public function serialize() {
-		$this->stringifyMaintainers();
-
-		return parent::serialize();
+	public function getBelongToComponent(): Component {
+		return $this->belong_to_component;
 	}
 
 
 	/**
-	 * @param \stdClass $serialized
+	 * @param \ILIAS\Tools\Maintainers\Component $belong_to_component
 	 */
-	public function unserialize(\stdClass $serialized) {
-		parent::unserialize($serialized);
+	public function setBelongToComponent(Component $belong_to_component) {
+		$this->belong_to_component = $belong_to_component;
+	}
+
+
+	public function doPopulate() {
 		$this->populateMaintainers();
+		$this->populateComponents();
+	}
+
+
+	public function doStringyfy() {
+		$this->stringifyMaintainers();
+		$this->stringifyComponents();
+	}
+
+
+	protected function populateComponents() {
+		foreach ($this->used_in_components as $k => $component) {
+			$this->used_in_components[$k] = Component::getInstance($component);
+		}
+		$this->belong_to_component = Component::getInstance($this->belong_to_component);
 	}
 
 
@@ -265,5 +288,13 @@ class Directory extends JsonSerializable  {
 		}
 		$this->tester = Maintainer::stringify($this->tester);
 		$this->testcase_writer = Maintainer::stringify($this->testcase_writer);
+	}
+
+
+	protected function stringifyComponents() {
+		foreach ($this->used_in_components as $k => $component) {
+			$this->used_in_components[$k] = $component->getName();
+		}
+		$this->belong_to_component = $this->belong_to_component->getName();
 	}
 }

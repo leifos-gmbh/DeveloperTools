@@ -28,15 +28,23 @@ class Component extends JsonSerializable {
 
 
 	/**
-	 * @param $name
+	 * @param string $name
 	 * @return \ILIAS\Tools\Maintainers\Component
 	 */
-	public static function getInstance($name) {
-		if (!isset(self::$registredInstances[$name])) {
+	public static function getInstance($name): Component {
+		if (!$name) {
+			$name = "None";
+		}
+		if (!key_exists($name, self::$registredInstances)) {
 			self::$registredInstances[$name] = new self($name);
 		}
 
 		return self::$registredInstances[$name];
+	}
+
+
+	public function updateFromData(\stdClass $data) {
+
 	}
 
 
@@ -57,21 +65,29 @@ class Component extends JsonSerializable {
 	 */
 	protected $name = '';
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $first_maintainer = "";
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $second_maintainer = "";
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $tester = "";
 	/**
-	 * @var string
+	 * @var \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	protected $testcase_writer = "";
+	/**
+	 * @var string
+	 */
+	protected $modell = Directory::CLASSIC;
+	/**
+	 * @var \ILIAS\Tools\Maintainers\Maintainer[]
+	 */
+	protected $coordinators = array();
 
 
 	/**
@@ -263,6 +279,16 @@ class Component extends JsonSerializable {
 	}
 
 
+	public function doPopulate() {
+		$this->populateMaintainers();
+	}
+
+
+	public function doStringyfy() {
+		$this->stringifyMaintainers();
+	}
+
+
 	protected function populateMaintainers() {
 		$this->first_maintainer = Maintainer::fromString($this->first_maintainer);
 		$this->second_maintainer = Maintainer::fromString($this->second_maintainer);
@@ -276,24 +302,5 @@ class Component extends JsonSerializable {
 		$this->second_maintainer = Maintainer::stringify($this->second_maintainer);
 		$this->tester = Maintainer::stringify($this->tester);
 		$this->testcase_writer = Maintainer::stringify($this->testcase_writer);
-	}
-
-
-	/**
-	 * @return \stdClass
-	 */
-	public function serialize() {
-		$this->stringifyMaintainers();
-
-		return parent::serialize();
-	}
-
-
-	/**
-	 * @param \stdClass $serialized
-	 */
-	public function unserialize(\stdClass $serialized) {
-		parent::unserialize($serialized);
-		$this->populateMaintainers();
 	}
 }
