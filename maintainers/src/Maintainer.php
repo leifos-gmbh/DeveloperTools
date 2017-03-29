@@ -78,24 +78,31 @@ class Maintainer extends JsonSerializable {
 	 * @return \ILIAS\Tools\Maintainers\Maintainer
 	 */
 	public static function fromString($string) {
-		if (!$string) {
+		if (!is_string($string) || !$string) {
 			return new self();
 		}
-		$n = new self();
 
-		if (preg_match('/([a-zA-Z0-9]*)\\(([\\d]*)\\)/uUm', $string, $matches)) {
+		if (key_exists($string, self::$registeredMaintainers)) {
+			return self::$registeredMaintainers[$string];
+		}
+
+		if (preg_match('/(.*)\\(([\\d]*)\\)/uUm', $string, $matches)) {
 			$username = (string)$matches[1];
+			if (key_exists($string, self::$registeredMaintainers)) {
+				$n = self::$registeredMaintainers[$username];
+			} else {
+				$n = new self();
+			}
 			$n->setUsername($username);
 			$user_id = (key_exists($username, self::$registeredMaintainers) ? self::$registeredMaintainers[$username]->getUserId() : (int)$matches[2]);
 			$n->setUserId($user_id);
 		} else {
-			$user_id = (key_exists($string, self::$registeredMaintainers) ? self::$registeredMaintainers[$string]->getUserId() : 0);
-			$n->setUserId($user_id);
-			$n->setUsername($string);
+			$n = new self();
+			$n->setUsername((string)$string);
 		}
 		self::$registeredMaintainers[$n->getUsername()] = $n;
 
-		return $n;
+		return self::$registeredMaintainers[$n->getUsername()];
 	}
 
 
@@ -105,27 +112,19 @@ class Maintainer extends JsonSerializable {
 	 */
 	public static function stringify($maintainer) {
 		if ($maintainer instanceof Maintainer) {
-			return $maintainer->serialize();
+			if ($maintainer->getUserId() == 0 && $maintainer->getUsername() == ''
+			    || $maintainer->getUsername() == '(0)'
+			) {
+				return '';
+			}
+			if (!$maintainer->getUserId() && $maintainer->getUsername()) {
+				return $maintainer->getUsername();
+			}
+
+			return "{$maintainer->getUsername()}({$maintainer->getUserId()})";
 		}
 
 		return $maintainer;
-	}
-
-
-	/**
-	 * @return string
-	 */
-	public function serialize() {
-		if ($this->getUserId() == 0 && $this->getUsername() == ''
-		    || $this->getUsername() == '(0)'
-		) {
-			return '';
-		}
-		if (!$this->getUserId() && $this->getUsername()) {
-			return $this->getUsername();
-		}
-
-		return "{$this->getUsername()}({$this->getUserId()})";
 	}
 
 
@@ -139,7 +138,7 @@ class Maintainer extends JsonSerializable {
 		}
 		$maintainers = array();
 		foreach (self::getRegisteredMaintainers() as $maintainer) {
-			$maintainers[$maintainer->getUsername()] = $maintainer->serialize();
+			$maintainers[$maintainer->getUsername()] = self::stringify($maintainer);
 		}
 
 		$filesystem->update($path_to_file, JsonSerializable::json_encode($maintainers));
@@ -155,7 +154,7 @@ class Maintainer extends JsonSerializable {
 			$filesystem->write($path_to_file, '[]');
 		}
 
-		foreach (json_decode($filesystem->read($path_to_file)) as $item) {
+		foreach (json_decode($filesystem->read($path_to_file)) as $k => $item) {
 			$new = self::fromString($item);
 
 			self::$registeredMaintainers[$new->getUsername()] = $new;
@@ -176,5 +175,13 @@ class Maintainer extends JsonSerializable {
 	 */
 	public static function setRegisteredMaintainers(array $registeredMaintainers) {
 		self::$registeredMaintainers = $registeredMaintainers;
+	}
+
+
+	public function doPopulate() {
+	}
+
+
+	public function doStringyfy() {
 	}
 }

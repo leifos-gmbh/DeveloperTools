@@ -66,18 +66,19 @@ class Iterator {
 				$this->getFilesystem()->write($json, $Directory->serializeAsJson());
 			} else {
 				$Directory->unserializeFromJson($this->getFilesystem()->read($json));
-				$this->getFilesystem()->update($json, $Directory->serializeAsJson());
-				foreach ($Directory->getUsedinComponents() as $component) {
-					$Component = Component::getInstance($component);
-					$Component->addDirectory($Directory);
+				foreach ($Directory->getUsedinComponents() as $Component) {
 					$this->collector->addComponent($Component);
 				}
+				$this->collector->addComponent($Directory->getBelongToComponent());
 			}
+			$Directory->populate();
 			if ($Directory->isMaintained()) {
 				$this->collector->addMaintained($Directory);
 			} else {
 				$this->collector->addUnmaintained($Directory);
 			}
+			$this->getFilesystem()->update($json, $Directory->serializeAsJson());
+//			$this->getFilesystem()->delete($json);
 		}
 	}
 
@@ -99,12 +100,11 @@ class Iterator {
 	 * @param array $directories
 	 */
 	public function runFor(array $directories, CLImate $cli = null) {
-		Component::loadComponentsJson($this->filesystem);
 		Maintainer::loadMaintainerJson($this->filesystem);
+		Component::loadComponentsJson($this->filesystem);
 		foreach ($directories as $directory) {
 			$this->run($directory, $cli);
 		}
-
 		$write = new \ILIAS\Tools\Maintainers\MarkdownWriter($this->getCollector());
 		$write->writeMD($this->getFilesystem());
 		Maintainer::writeMaintainerJson($this->filesystem);

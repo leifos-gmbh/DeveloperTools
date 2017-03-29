@@ -1,353 +1,713 @@
-{
-    "Bibliographic": {
-        "directories": [
-            {},
-            {},
-            {}
-        ],
-        "name": "Bibliographic",
+[
+    {
+        "directories": [],
+        "name": "Administration",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
+        "second_maintainer": "fschmid(21087)",
+        "tester": "fschmid(21087)",
+        "testcase_writer": "fschmid(21087)",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "OrgUnits": {
-        "directories": [
-            {},
-            {}
-        ],
-        "name": "OrgUnits",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
+    {
+        "directories": [],
+        "name": "Bookmarks",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(27631)",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "StudyProgramme": {
-        "directories": [
-            {},
-            {}
-        ],
-        "name": "StudyProgramme",
-        "first_maintainer": "rklees(34047)",
-        "second_maintainer": "shecken",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "ItemGroup": {
-        "directories": [
-            {}
-        ],
-        "name": "ItemGroup",
+    {
+        "directories": [],
+        "name": "CSS / Templates",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "DataCollection": {
+    {
+        "directories": [],
+        "name": "Calendar",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(27631)",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Category and Repository",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Competence Management",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Contacts",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Course Management",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Cron Service",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "ECS Interface",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Exercise",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Export",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Forum",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Glossary",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Group",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "ILIAS Page Editor",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Info Page",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [],
+        "name": "Language Handling",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
         "directories": [
-            {},
-            {},
-            {}
+            "Modules/BookingManager",
+            "Modules/BookingManager"
         ],
-        "name": "DataCollection",
+        "name": "Booking Tool",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Modules/Cloud",
+            "Modules/Cloud"
+        ],
+        "name": "Cloud Object",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "fschmid(21087)",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Modules/DataCollection",
+            "Modules/DataCollection"
+        ],
+        "name": "Data Collection",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "GlobalCache": {
+    {
         "directories": [
-            {}
+            "Services/ActiveRecord",
+            "Services/ActiveRecord"
+        ],
+        "name": "ActiveRecord",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/ActiveRecord"
         ],
         "name": "GlobalCache",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "WebAccessChecker": {
+    {
         "directories": [
-            {},
-            {}
+            "Services/ActiveRecord",
+            "Services/ActiveRecord"
         ],
-        "name": "WebAccessChecker",
-        "first_maintainer": "fschmid(21087)",
+        "name": "ItemGroup",
+        "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Authentication & Registration": {
+    {
         "directories": [
-            {}
+            "Services/AuthShibboleth",
+            "Services/AuthShibboleth"
         ],
         "name": "Authentication & Registration",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "BackgroundTasks": {
+    {
         "directories": [
-            {}
+            "Services/BackgroundTask",
+            "Services/BackgroundTask"
         ],
         "name": "BackgroundTasks",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "ilUtil": {
+    {
         "directories": [
-            {}
+            "Services/Database",
+            "Services/Database"
         ],
-        "name": "ilUtil",
+        "name": "Database",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "File": {
+    {
         "directories": [
-            {},
-            {},
-            {}
-        ],
-        "name": "File",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Excel": {
-        "directories": [
-            {}
+            "Services/FileDelivery",
+            "Services/FileDelivery"
         ],
         "name": "Excel",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Style": {
+    {
         "directories": [
-            {}
+            "Services/FileDelivery",
+            "Services/FileDelivery"
         ],
         "name": "Style",
-        "first_maintainer": "amstutz(26468)",
+        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Component": {
+    {
         "directories": [
-            {}
+            "Services/FileDelivery",
+            "Services/FileDelivery"
+        ],
+        "name": "ilUtil",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/GlobalCache",
+            "Services/GlobalCache"
         ],
         "name": "Component",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "EventHandling": {
+    {
         "directories": [
-            {}
+            "Services/GlobalCache",
+            "Services/GlobalCache"
         ],
         "name": "EventHandling",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Initialisation": {
+    {
         "directories": [
-            {}
+            "Services/GlobalCache",
+            "Services/GlobalCache"
         ],
         "name": "Initialisation",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Language": {
+    {
         "directories": [
-            {},
-            {}
-        ],
-        "name": "Language",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Object": {
-        "directories": [
-            {}
+            "Services/GlobalCache",
+            "Services/GlobalCache"
         ],
         "name": "Object",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "TemplateEngine": {
+    {
         "directories": [
-            {}
+            "Services/GlobalCache",
+            "Services/GlobalCache"
         ],
         "name": "TemplateEngine",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "ObjectDefinition": {
+    {
         "directories": [
-            {}
-        ],
-        "name": "ObjectDefinition",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Learning Module SCORM": {
-        "directories": [
-            {}
-        ],
-        "name": "Learning Module SCORM",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Blog": {
-        "directories": [
-            {}
-        ],
-        "name": "Blog",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Learning Module HTML": {
-        "directories": [
-            {}
-        ],
-        "name": "Learning Module HTML",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "MediaCast": {
-        "directories": [
-            {},
-            {}
-        ],
-        "name": "MediaCast",
-        "first_maintainer": "",
-        "second_maintainer": "fschmid(21087)",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Poll": {
-        "directories": [
-            {}
-        ],
-        "name": "Poll",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Portfolio": {
-        "directories": [
-            {}
-        ],
-        "name": "Portfolio",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Test": {
-        "directories": [
-            {}
-        ],
-        "name": "Test",
-        "first_maintainer": "bheyser",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Certificate": {
-        "directories": [
-            {}
-        ],
-        "name": "Certificate",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Chat": {
-        "directories": [
-            {}
-        ],
-        "name": "Chat",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": ""
-    },
-    "Badges": {
-        "directories": [
-            {}
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
         ],
         "name": "Badges",
-        "first_maintainer": "",
+        "first_maintainer": "akill(27631)",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "Thomas.schroeder(38330)",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Booking Manager": {
+    {
         "directories": [
-            {}
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
         ],
         "name": "Booking Manager",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Media Objects": {
+    {
         "directories": [
-            {}
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Certificate",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Chat",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Learning Module HTML",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Learning Module SCORM",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
         ],
         "name": "Media Objects",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "User": {
+    {
         "directories": [
-            {}
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "ObjectDefinition",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Poll",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Portfolio",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Test",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker"
         ],
         "name": "User",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     },
-    "Cloud": {
+    {
         "directories": [
-            {}
+            "src/UI",
+            "src/UI"
         ],
-        "name": "Cloud",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "amstutz(26468)",
+        "name": "UI-Service",
+        "first_maintainer": "",
+        "second_maintainer": "",
         "tester": "",
-        "testcase_writer": ""
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/ActiveRecord",
+            "Modules/OrgUnit",
+            "Services/ActiveRecord",
+            "Modules/OrgUnit"
+        ],
+        "name": "Organisational Units",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "bheyser(14300)",
+        "tester": "wischniak(21896)",
+        "testcase_writer": "wischniak(21896)",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/ActiveRecord",
+            "Modules/StudyProgramme",
+            "Services/ActiveRecord",
+            "Modules/StudyProgramme"
+        ],
+        "name": "StudyProgramme",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/FileDelivery",
+            "Services/FileDelivery",
+            "Services/ActiveRecord"
+        ],
+        "name": "WebAccessChecker",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/WebAccessChecker",
+            "Services/WebAccessChecker",
+            "Services/ActiveRecord"
+        ],
+        "name": "DataCollection",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/GlobalCache",
+            "Services/Language",
+            "Services/Language",
+            "Services/GlobalCache"
+        ],
+        "name": "Language",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Modules/Blog",
+            "Modules/Blog",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Blog",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Modules/MediaCast",
+            "Modules/MediaCast",
+            "Services/WebAccessChecker"
+        ],
+        "name": "MediaCast",
+        "first_maintainer": "",
+        "second_maintainer": "fschmid(21087)",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/FileDelivery",
+            "Modules/Bibliographic",
+            "Services/FileDelivery",
+            "Services/ActiveRecord",
+            "Modules/Bibliographic"
+        ],
+        "name": "Bibliographic List Item",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "mglaubitz",
+        "testcase_writer": "fschmid(21087)",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    {
+        "directories": [
+            "Services/FileDelivery",
+            "Services/FileDelivery",
+            "Services/WebAccessChecker",
+            "Modules/File",
+            "Services/FileDelivery",
+            "Services/FileDelivery",
+            "Services/WebAccessChecker",
+            "Modules/File"
+        ],
+        "name": "File",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
     }
-}
+]

@@ -127,6 +127,6 @@ class Collector {
 	 * @return \ILIAS\Tools\Maintainers\Directory[]
 	 */
 	public function getByModell($modell): array {
-		return $this->by_modell[$modell];
+		return $this->by_modell[$modell] ? $this->by_modell[$modell] : array();
 	}
 }
