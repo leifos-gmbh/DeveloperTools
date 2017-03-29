@@ -1,6 +1,11 @@
-#How to use this script
+# How to use this script
+First of all use composer to install all dependencies:
+```
+$ composer install
+```
+Use the commandline php to run the script:
 ````
-Usage: php run.php [-p path, --path path (default: /var/www/ilias)]
+Usage: $ php run.php [-p path, --path path (default: /var/www/ilias)]
 
 Optional Arguments:
 	-p path, --path path (default: /var/www/ilias)
@@ -23,8 +28,9 @@ Those files are structures like this:
     "tester": "", // Same format as first_maintainer
     "testcase_writer": "", // Same format as first_maintainer
     "path": "Modules/Bibliographic", // Will be generated automatically
+    "belong_to_component": "Bibliographic List Item"
     "used_in_components": [
-        "Bibliographic" // List every Component which uses ode from this directory. If nearly the whole codebase uses it, write "All". If nobody uses it write "None"
+        "FileDelivery" // List every Component which uses ode from this directory. If nearly the whole codebase uses it, write "All". If nobody uses it write "None"
     ]
 }
 ```
