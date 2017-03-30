@@ -122,7 +122,7 @@ class Component extends JsonSerializable {
 	 * @param \ILIAS\Tools\Maintainers\Directory $directory
 	 */
 	public function addDirectory(Directory $directory) {
-		$this->directories[] = $directory;
+		$this->directories[$directory->getPath()] = $directory;
 	}
 
 
@@ -283,10 +283,7 @@ class Component extends JsonSerializable {
 
 	public function doStringyfy() {
 		$this->stringifyMaintainers();
-
-		foreach ($this->directories as $k => $directory) {
-			$this->directories[$k] = $directory->getPath();
-		}
+		$this->directories = array_keys($this->directories);
 	}
 
 

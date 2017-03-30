@@ -181,7 +181,6 @@
     },
     {
         "directories": [
-            "Modules/BookingManager",
             "Modules/BookingManager"
         ],
         "name": "Booking Tool",
@@ -194,7 +193,6 @@
     },
     {
         "directories": [
-            "Modules/Cloud",
             "Modules/Cloud"
         ],
         "name": "Cloud Object",
@@ -207,7 +205,6 @@
     },
     {
         "directories": [
-            "Modules/DataCollection",
             "Modules/DataCollection"
         ],
         "name": "Data Collection",
@@ -220,7 +217,6 @@
     },
     {
         "directories": [
-            "Services/ActiveRecord",
             "Services/ActiveRecord"
         ],
         "name": "ActiveRecord",
@@ -233,7 +229,6 @@
     },
     {
         "directories": [
-            "Services/ActiveRecord",
             "Services/ActiveRecord"
         ],
         "name": "GlobalCache",
@@ -246,7 +241,6 @@
     },
     {
         "directories": [
-            "Services/ActiveRecord",
             "Services/ActiveRecord"
         ],
         "name": "ItemGroup",
@@ -259,7 +253,6 @@
     },
     {
         "directories": [
-            "Services/AuthShibboleth",
             "Services/AuthShibboleth"
         ],
         "name": "Authentication & Registration",
@@ -272,7 +265,6 @@
     },
     {
         "directories": [
-            "Services/BackgroundTask",
             "Services/BackgroundTask"
         ],
         "name": "BackgroundTasks",
@@ -285,7 +277,6 @@
     },
     {
         "directories": [
-            "Services/Database",
             "Services/Database"
         ],
         "name": "Database",
@@ -298,7 +289,6 @@
     },
     {
         "directories": [
-            "Services/FileDelivery",
             "Services/FileDelivery"
         ],
         "name": "Excel",
@@ -311,7 +301,6 @@
     },
     {
         "directories": [
-            "Services/FileDelivery",
             "Services/FileDelivery"
         ],
         "name": "Style",
@@ -324,7 +313,6 @@
     },
     {
         "directories": [
-            "Services/FileDelivery",
             "Services/FileDelivery"
         ],
         "name": "ilUtil",
@@ -337,7 +325,6 @@
     },
     {
         "directories": [
-            "Services/GlobalCache",
             "Services/GlobalCache"
         ],
         "name": "Component",
@@ -350,7 +337,6 @@
     },
     {
         "directories": [
-            "Services/GlobalCache",
             "Services/GlobalCache"
         ],
         "name": "EventHandling",
@@ -363,7 +349,6 @@
     },
     {
         "directories": [
-            "Services/GlobalCache",
             "Services/GlobalCache"
         ],
         "name": "Initialisation",
@@ -376,7 +361,6 @@
     },
     {
         "directories": [
-            "Services/GlobalCache",
             "Services/GlobalCache"
         ],
         "name": "Object",
@@ -389,7 +373,6 @@
     },
     {
         "directories": [
-            "Services/GlobalCache",
             "Services/GlobalCache"
         ],
         "name": "TemplateEngine",
@@ -402,7 +385,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Badges",
@@ -415,7 +397,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Booking Manager",
@@ -428,7 +409,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Certificate",
@@ -441,7 +421,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Chat",
@@ -454,7 +433,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Learning Module HTML",
@@ -467,7 +445,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Learning Module SCORM",
@@ -480,7 +457,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Media Objects",
@@ -493,7 +469,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "ObjectDefinition",
@@ -506,7 +481,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Poll",
@@ -519,7 +493,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Portfolio",
@@ -532,7 +505,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "Test",
@@ -545,7 +517,6 @@
     },
     {
         "directories": [
-            "Services/WebAccessChecker",
             "Services/WebAccessChecker"
         ],
         "name": "User",
@@ -558,7 +529,6 @@
     },
     {
         "directories": [
-            "src/UI",
             "src/UI"
         ],
         "name": "UI-Service",
@@ -571,8 +541,6 @@
     },
     {
         "directories": [
-            "Services/ActiveRecord",
-            "Modules/OrgUnit",
             "Services/ActiveRecord",
             "Modules/OrgUnit"
         ],
@@ -587,8 +555,6 @@
     {
         "directories": [
             "Services/ActiveRecord",
-            "Modules/StudyProgramme",
-            "Services/ActiveRecord",
             "Modules/StudyProgramme"
         ],
         "name": "StudyProgramme",
@@ -602,9 +568,7 @@
     {
         "directories": [
             "Services/ActiveRecord",
-            "Services/FileDelivery",
-            "Services/FileDelivery",
-            "Services/ActiveRecord"
+            "Services/FileDelivery"
         ],
         "name": "WebAccessChecker",
         "first_maintainer": "fschmid(21087)",
@@ -617,9 +581,7 @@
     {
         "directories": [
             "Services/ActiveRecord",
-            "Services/WebAccessChecker",
-            "Services/WebAccessChecker",
-            "Services/ActiveRecord"
+            "Services/WebAccessChecker"
         ],
         "name": "DataCollection",
         "first_maintainer": "",
@@ -632,9 +594,7 @@
     {
         "directories": [
             "Services/GlobalCache",
-            "Services/Language",
-            "Services/Language",
-            "Services/GlobalCache"
+            "Services/Language"
         ],
         "name": "Language",
         "first_maintainer": "",
@@ -647,9 +607,7 @@
     {
         "directories": [
             "Services/WebAccessChecker",
-            "Modules/Blog",
-            "Modules/Blog",
-            "Services/WebAccessChecker"
+            "Modules/Blog"
         ],
         "name": "Blog",
         "first_maintainer": "fschmid(21087)",
@@ -662,9 +620,7 @@
     {
         "directories": [
             "Services/WebAccessChecker",
-            "Modules/MediaCast",
-            "Modules/MediaCast",
-            "Services/WebAccessChecker"
+            "Modules/MediaCast"
         ],
         "name": "MediaCast",
         "first_maintainer": "",
@@ -678,9 +634,6 @@
         "directories": [
             "Services/ActiveRecord",
             "Services/FileDelivery",
-            "Modules/Bibliographic",
-            "Services/FileDelivery",
-            "Services/ActiveRecord",
             "Modules/Bibliographic"
         ],
         "name": "Bibliographic List Item",
@@ -693,11 +646,6 @@
     },
     {
         "directories": [
-            "Services/FileDelivery",
-            "Services/FileDelivery",
-            "Services/WebAccessChecker",
-            "Modules/File",
-            "Services/FileDelivery",
             "Services/FileDelivery",
             "Services/WebAccessChecker",
             "Modules/File"
