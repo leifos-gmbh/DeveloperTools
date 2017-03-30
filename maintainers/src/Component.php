@@ -141,7 +141,7 @@ class Component extends JsonSerializable {
 			}
 			$components[$component->getName()] = $component->serialize();
 		}
-		sort($components);
+		asort($components);
 
 		$filesystem->update($path_to_file, JsonSerializable::json_encode($components));
 	}

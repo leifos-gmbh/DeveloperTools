@@ -1,5 +1,5 @@
-[
-    {
+{
+    "Administration": {
         "directories": [],
         "name": "Administration",
         "first_maintainer": "fschmid(21087)",
@@ -9,7 +9,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Bookmarks": {
         "directories": [],
         "name": "Bookmarks",
         "first_maintainer": "smeyer(191)",
@@ -19,7 +19,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "CSS / Templates": {
         "directories": [],
         "name": "CSS / Templates",
         "first_maintainer": "",
@@ -29,7 +29,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Calendar": {
         "directories": [],
         "name": "Calendar",
         "first_maintainer": "smeyer(191)",
@@ -39,7 +39,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Category and Repository": {
         "directories": [],
         "name": "Category and Repository",
         "first_maintainer": "akill(27631)",
@@ -49,7 +49,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Competence Management": {
         "directories": [],
         "name": "Competence Management",
         "first_maintainer": "akill(27631)",
@@ -59,7 +59,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Contacts": {
         "directories": [],
         "name": "Contacts",
         "first_maintainer": "mjansen(8784)",
@@ -69,7 +69,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Course Management": {
         "directories": [],
         "name": "Course Management",
         "first_maintainer": "",
@@ -79,7 +79,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Cron Service": {
         "directories": [],
         "name": "Cron Service",
         "first_maintainer": "",
@@ -89,7 +89,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "ECS Interface": {
         "directories": [],
         "name": "ECS Interface",
         "first_maintainer": "",
@@ -99,7 +99,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Exercise": {
         "directories": [],
         "name": "Exercise",
         "first_maintainer": "",
@@ -109,7 +109,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Export": {
         "directories": [],
         "name": "Export",
         "first_maintainer": "",
@@ -119,7 +119,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Forum": {
         "directories": [],
         "name": "Forum",
         "first_maintainer": "",
@@ -129,7 +129,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Glossary": {
         "directories": [],
         "name": "Glossary",
         "first_maintainer": "",
@@ -139,7 +139,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Group": {
         "directories": [],
         "name": "Group",
         "first_maintainer": "",
@@ -149,7 +149,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "ILIAS Page Editor": {
         "directories": [],
         "name": "ILIAS Page Editor",
         "first_maintainer": "",
@@ -159,7 +159,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Info Page": {
         "directories": [],
         "name": "Info Page",
         "first_maintainer": "",
@@ -169,7 +169,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Language Handling": {
         "directories": [],
         "name": "Language Handling",
         "first_maintainer": "",
@@ -179,7 +179,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Booking Tool": {
         "directories": [
             "Modules/BookingManager"
         ],
@@ -191,7 +191,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Cloud Object": {
         "directories": [
             "Modules/Cloud"
         ],
@@ -203,7 +203,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Data Collection": {
         "directories": [
             "Modules/DataCollection"
         ],
@@ -215,7 +215,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "ActiveRecord": {
         "directories": [
             "Services/ActiveRecord"
         ],
@@ -227,7 +227,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "GlobalCache": {
         "directories": [
             "Services/ActiveRecord"
         ],
@@ -239,7 +239,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "ItemGroup": {
         "directories": [
             "Services/ActiveRecord"
         ],
@@ -251,7 +251,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Authentication & Registration": {
         "directories": [
             "Services/AuthShibboleth"
         ],
@@ -263,7 +263,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "BackgroundTasks": {
         "directories": [
             "Services/BackgroundTask"
         ],
@@ -275,7 +275,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Database": {
         "directories": [
             "Services/Database"
         ],
@@ -287,7 +287,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Excel": {
         "directories": [
             "Services/FileDelivery"
         ],
@@ -299,7 +299,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Style": {
         "directories": [
             "Services/FileDelivery"
         ],
@@ -311,7 +311,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "ilUtil": {
         "directories": [
             "Services/FileDelivery"
         ],
@@ -323,7 +323,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Component": {
         "directories": [
             "Services/GlobalCache"
         ],
@@ -335,7 +335,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "EventHandling": {
         "directories": [
             "Services/GlobalCache"
         ],
@@ -347,7 +347,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Initialisation": {
         "directories": [
             "Services/GlobalCache"
         ],
@@ -359,7 +359,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Object": {
         "directories": [
             "Services/GlobalCache"
         ],
@@ -371,7 +371,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "TemplateEngine": {
         "directories": [
             "Services/GlobalCache"
         ],
@@ -383,7 +383,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Badges": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -395,7 +395,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Booking Manager": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -407,7 +407,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Certificate": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -419,7 +419,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Chat": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -431,7 +431,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Learning Module HTML": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -443,7 +443,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Learning Module SCORM": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -455,7 +455,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Media Objects": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -467,7 +467,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "ObjectDefinition": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -479,7 +479,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Poll": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -491,7 +491,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Portfolio": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -503,7 +503,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Test": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -515,7 +515,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "User": {
         "directories": [
             "Services/WebAccessChecker"
         ],
@@ -527,7 +527,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "UI-Service": {
         "directories": [
             "src/UI"
         ],
@@ -539,7 +539,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Organisational Units": {
         "directories": [
             "Services/ActiveRecord",
             "Modules/OrgUnit"
@@ -552,7 +552,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "StudyProgramme": {
         "directories": [
             "Services/ActiveRecord",
             "Modules/StudyProgramme"
@@ -565,7 +565,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "WebAccessChecker": {
         "directories": [
             "Services/ActiveRecord",
             "Services/FileDelivery"
@@ -578,7 +578,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "DataCollection": {
         "directories": [
             "Services/ActiveRecord",
             "Services/WebAccessChecker"
@@ -591,7 +591,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Language": {
         "directories": [
             "Services/GlobalCache",
             "Services/Language"
@@ -604,7 +604,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Blog": {
         "directories": [
             "Services/WebAccessChecker",
             "Modules/Blog"
@@ -617,7 +617,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "MediaCast": {
         "directories": [
             "Services/WebAccessChecker",
             "Modules/MediaCast"
@@ -630,7 +630,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "Bibliographic List Item": {
         "directories": [
             "Services/ActiveRecord",
             "Services/FileDelivery",
@@ -644,7 +644,7 @@
         "modell": "Classic",
         "coordinators": []
     },
-    {
+    "File": {
         "directories": [
             "Services/FileDelivery",
             "Services/WebAccessChecker",
@@ -658,4 +658,4 @@
         "modell": "Classic",
         "coordinators": []
     }
-]
+}
