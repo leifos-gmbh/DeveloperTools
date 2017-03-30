@@ -9,6 +9,16 @@
         "modell": "Classic",
         "coordinators": []
     },
+    "Authentication & Registration": {
+        "directories": [],
+        "name": "Authentication & Registration",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
     "Bookmarks": {
         "directories": [],
         "name": "Bookmarks",
@@ -24,7 +34,7 @@
         "name": "CSS / Templates",
         "first_maintainer": "",
         "second_maintainer": "",
-        "tester": "",
+        "tester": "fschmid(21087)",
         "testcase_writer": "",
         "modell": "Classic",
         "coordinators": []
@@ -179,6 +189,16 @@
         "modell": "Classic",
         "coordinators": []
     },
+    "User": {
+        "directories": [],
+        "name": "User",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
     "Booking Tool": {
         "directories": [
             "Modules/BookingManager"
@@ -197,21 +217,9 @@
         ],
         "name": "Cloud Object",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "fschmid(21087)",
-        "tester": "",
-        "testcase_writer": "",
-        "modell": "Classic",
-        "coordinators": []
-    },
-    "Data Collection": {
-        "directories": [
-            "Modules/DataCollection"
-        ],
-        "name": "Data Collection",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "second_maintainer": "amstutz(26468)",
+        "tester": "amstutz(26468)",
+        "testcase_writer": "ttruffer(42894)",
         "modell": "Classic",
         "coordinators": []
     },
@@ -251,15 +259,15 @@
         "modell": "Classic",
         "coordinators": []
     },
-    "Authentication & Registration": {
+    "Shibboleth Authentication": {
         "directories": [
             "Services/AuthShibboleth"
         ],
-        "name": "Authentication & Registration",
-        "first_maintainer": "",
+        "name": "Shibboleth Authentication",
+        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "iLUB Universität Bern",
         "modell": "Classic",
         "coordinators": []
     },
@@ -271,6 +279,18 @@
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
+        "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    "Plugin Slots": {
+        "directories": [
+            "Services/Component"
+        ],
+        "name": "Plugin Slots",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "fschmid(21087)",
+        "tester": "PerPascalGrube(31492)",
         "testcase_writer": "",
         "modell": "Classic",
         "coordinators": []
@@ -380,6 +400,30 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    "Notes and Comments": {
+        "directories": [
+            "Services/Notes"
+        ],
+        "name": "Notes and Comments",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "fschmid(21087)",
+        "tester": "skaiser(17260)",
+        "testcase_writer": "skaiser(17260)",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    "Tagging": {
+        "directories": [
+            "Services/Tagging"
+        ],
+        "name": "Tagging",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "mstuder(8473)",
+        "tester": "skaiser(17260)",
+        "testcase_writer": "skaiser(17260)",
         "modell": "Classic",
         "coordinators": []
     },
@@ -515,11 +559,11 @@
         "modell": "Classic",
         "coordinators": []
     },
-    "User": {
+    "User Service": {
         "directories": [
             "Services/WebAccessChecker"
         ],
-        "name": "User",
+        "name": "User Service",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
@@ -552,42 +596,29 @@
         "modell": "Classic",
         "coordinators": []
     },
-    "StudyProgramme": {
+    "Study Programme": {
         "directories": [
             "Services/ActiveRecord",
             "Modules/StudyProgramme"
         ],
-        "name": "StudyProgramme",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "name": "Study Programme",
+        "first_maintainer": "rklees(34047)",
+        "second_maintainer": "shecken(45419)",
+        "tester": "mstuder(8473)",
+        "testcase_writer": "rklees(34047)",
         "modell": "Classic",
         "coordinators": []
     },
-    "WebAccessChecker": {
+    "Web Access Checker": {
         "directories": [
             "Services/ActiveRecord",
             "Services/FileDelivery"
         ],
-        "name": "WebAccessChecker",
+        "name": "Web Access Checker",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "modell": "Classic",
-        "coordinators": []
-    },
-    "DataCollection": {
-        "directories": [
-            "Services/ActiveRecord",
-            "Services/WebAccessChecker"
-        ],
-        "name": "DataCollection",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "second_maintainer": "ukohnle(21855)",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "ttruffer(42894)",
         "modell": "Classic",
         "coordinators": []
     },
@@ -623,10 +654,10 @@
             "Modules/MediaCast"
         ],
         "name": "MediaCast",
-        "first_maintainer": "",
+        "first_maintainer": "akill(27631)",
         "second_maintainer": "fschmid(21087)",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "berggold(22199)",
+        "testcase_writer": "berggold(22199)",
         "modell": "Classic",
         "coordinators": []
     },
@@ -639,8 +670,22 @@
         "name": "Bibliographic List Item",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
-        "tester": "mglaubitz",
-        "testcase_writer": "fschmid(21087)",
+        "tester": "marko.glaubitz(28309)",
+        "testcase_writer": "mstuder(8473)",
+        "modell": "Classic",
+        "coordinators": []
+    },
+    "Data Collection": {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/WebAccessChecker",
+            "Modules/DataCollection"
+        ],
+        "name": "Data Collection",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "kim.schmidt(28720)",
+        "testcase_writer": "mstuder(8473)",
         "modell": "Classic",
         "coordinators": []
     },
@@ -652,9 +697,9 @@
         ],
         "name": "File",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "second_maintainer": "akill(27631)",
+        "tester": "tloewen(41553)",
+        "testcase_writer": "tloewen(41553)",
         "modell": "Classic",
         "coordinators": []
     }

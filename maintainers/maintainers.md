@@ -5,46 +5,28 @@ The code base is deviced in several components which are maintained in the Class
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: src/UI, 
-* **Data Collection**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Modules/DataCollection, 
-* **Database**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/Database, 
 * **BackgroundTasks**
 	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
 	* 2nd Maintainer: MISSING
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/BackgroundTask, 
-* **Badges**
-	* 1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: [Thomas.schroeder](http://www.ilias.de/docu/goto_docu_usr_38330.html)
-	* Tester: MISSING
-	* Used in Directories: Services/WebAccessChecker, 
 * **ActiveRecord**
 	* 1st Maintainer: MISSING
 	* 2nd Maintainer: MISSING
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/ActiveRecord, 
-* **Authentication & Registration**
-	* 1st Maintainer: MISSING
+* **Shibboleth Authentication**
+	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
 	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
+	* Testcases: iLUB Universität Bern
+	* Tester: iLUB Universität Bern
 	* Used in Directories: Services/AuthShibboleth, 
-* **Booking Manager**
-	* 1st Maintainer: MISSING
+* **Badges**
+	* 1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
 	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
+	* Testcases: [Thomas.schroeder](http://www.ilias.de/docu/goto_docu_usr_38330.html)
 	* Tester: MISSING
 	* Used in Directories: Services/WebAccessChecker, 
 * **GlobalCache**
@@ -53,6 +35,126 @@ The code base is deviced in several components which are maintained in the Class
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/ActiveRecord, 
+* **Cloud Object**
+	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* 2nd Maintainer: [amstutz](http://www.ilias.de/docu/goto_docu_usr_26468.html)
+	* Testcases: [ttruffer](http://www.ilias.de/docu/goto_docu_usr_42894.html)
+	* Tester: [amstutz](http://www.ilias.de/docu/goto_docu_usr_26468.html)
+	* Used in Directories: Modules/Cloud, 
+* **Plugin Slots**
+	* 1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
+	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* Testcases: MISSING
+	* Tester: [PerPascalGrube](http://www.ilias.de/docu/goto_docu_usr_31492.html)
+	* Used in Directories: Services/Component, 
+* **Initialisation**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/GlobalCache, 
+* **Booking Manager**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/WebAccessChecker, 
+* **Database**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/Database, 
+* **ObjectDefinition**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/WebAccessChecker, 
+* **ItemGroup**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/ActiveRecord, 
+* **Notes and Comments**
+	* 1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
+	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* Testcases: [skaiser](http://www.ilias.de/docu/goto_docu_usr_17260.html)
+	* Tester: [skaiser](http://www.ilias.de/docu/goto_docu_usr_17260.html)
+	* Used in Directories: Services/Notes, 
+* **User Service**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/WebAccessChecker, 
+* **EventHandling**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/GlobalCache, 
+* **Object**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/GlobalCache, 
+* **Media Objects**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/WebAccessChecker, 
+* **Excel**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/FileDelivery, 
+* **Component**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/GlobalCache, 
+* **Style**
+	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/FileDelivery, 
+* **Booking Tool**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Modules/BookingManager, 
+* **ilUtil**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/FileDelivery, 
+* **Learning Module SCORM**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/WebAccessChecker, 
+* **Tagging**
+	* 1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
+	* 2nd Maintainer: [mstuder](http://www.ilias.de/docu/goto_docu_usr_8473.html)
+	* Testcases: [skaiser](http://www.ilias.de/docu/goto_docu_usr_17260.html)
+	* Tester: [skaiser](http://www.ilias.de/docu/goto_docu_usr_17260.html)
+	* Used in Directories: Services/Tagging, 
+* **TemplateEngine**
+	* 1st Maintainer: MISSING
+	* 2nd Maintainer: MISSING
+	* Testcases: MISSING
+	* Tester: MISSING
+	* Used in Directories: Services/GlobalCache, 
 * **Certificate**
 	* 1st Maintainer: MISSING
 	* 2nd Maintainer: MISSING
@@ -65,84 +167,12 @@ The code base is deviced in several components which are maintained in the Class
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/WebAccessChecker, 
-* **Excel**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/FileDelivery, 
-* **ilUtil**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/FileDelivery, 
 * **Learning Module HTML**
 	* 1st Maintainer: MISSING
 	* 2nd Maintainer: MISSING
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/WebAccessChecker, 
-* **Learning Module SCORM**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/WebAccessChecker, 
-* **Style**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/FileDelivery, 
-* **Media Objects**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/WebAccessChecker, 
-* **ObjectDefinition**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/WebAccessChecker, 
-* **Booking Tool**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Modules/BookingManager, 
-* **ItemGroup**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/ActiveRecord, 
-* **Component**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/GlobalCache, 
-* **EventHandling**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/GlobalCache, 
-* **Initialisation**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/GlobalCache, 
-* **Object**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/GlobalCache, 
 * **Poll**
 	* 1st Maintainer: MISSING
 	* 2nd Maintainer: MISSING
@@ -155,102 +185,86 @@ The code base is deviced in several components which are maintained in the Class
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/WebAccessChecker, 
-* **Cloud Object**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Modules/Cloud, 
 * **Test**
 	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
 	* 2nd Maintainer: MISSING
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/WebAccessChecker, 
-* **User**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/WebAccessChecker, 
-* **TemplateEngine**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/GlobalCache, 
-* **DataCollection**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/ActiveRecord, Services/WebAccessChecker, 
-* **WebAccessChecker**
-	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/ActiveRecord, Services/FileDelivery, 
 * **Organisational Units**
 	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
 	* 2nd Maintainer: [bheyser](http://www.ilias.de/docu/goto_docu_usr_14300.html)
 	* Testcases: [wischniak](http://www.ilias.de/docu/goto_docu_usr_21896.html)
 	* Tester: [wischniak](http://www.ilias.de/docu/goto_docu_usr_21896.html)
 	* Used in Directories: Services/ActiveRecord, Modules/OrgUnit, 
+* **Web Access Checker**
+	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* 2nd Maintainer: [ukohnle](http://www.ilias.de/docu/goto_docu_usr_21855.html)
+	* Testcases: [ttruffer](http://www.ilias.de/docu/goto_docu_usr_42894.html)
+	* Tester: iLUB Universität Bern
+	* Used in Directories: Services/ActiveRecord, Services/FileDelivery, 
+* **MediaCast**
+	* 1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
+	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* Testcases: [berggold](http://www.ilias.de/docu/goto_docu_usr_22199.html)
+	* Tester: [berggold](http://www.ilias.de/docu/goto_docu_usr_22199.html)
+	* Used in Directories: Services/WebAccessChecker, Modules/MediaCast, 
 * **Blog**
 	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
 	* 2nd Maintainer: MISSING
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/WebAccessChecker, Modules/Blog, 
-* **MediaCast**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Testcases: MISSING
-	* Tester: MISSING
-	* Used in Directories: Services/WebAccessChecker, Modules/MediaCast, 
 * **Language**
 	* 1st Maintainer: MISSING
 	* 2nd Maintainer: MISSING
 	* Testcases: MISSING
 	* Tester: MISSING
 	* Used in Directories: Services/GlobalCache, Services/Language, 
-* **StudyProgramme**
-	* 1st Maintainer: MISSING
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
+* **Study Programme**
+	* 1st Maintainer: [rklees](http://www.ilias.de/docu/goto_docu_usr_34047.html)
+	* 2nd Maintainer: [shecken](http://www.ilias.de/docu/goto_docu_usr_45419.html)
+	* Testcases: [rklees](http://www.ilias.de/docu/goto_docu_usr_34047.html)
+	* Tester: [mstuder](http://www.ilias.de/docu/goto_docu_usr_8473.html)
 	* Used in Directories: Services/ActiveRecord, Modules/StudyProgramme, 
 * **File**
 	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* 2nd Maintainer: MISSING
-	* Testcases: MISSING
-	* Tester: MISSING
+	* 2nd Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html)
+	* Testcases: [tloewen](http://www.ilias.de/docu/goto_docu_usr_41553.html)
+	* Tester: [tloewen](http://www.ilias.de/docu/goto_docu_usr_41553.html)
 	* Used in Directories: Services/FileDelivery, Services/WebAccessChecker, Modules/File, 
+* **Data Collection**
+	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
+	* 2nd Maintainer: MISSING
+	* Testcases: [mstuder](http://www.ilias.de/docu/goto_docu_usr_8473.html)
+	* Tester: [kim.schmidt](http://www.ilias.de/docu/goto_docu_usr_28720.html)
+	* Used in Directories: Services/ActiveRecord, Services/WebAccessChecker, Modules/DataCollection, 
 * **Bibliographic List Item**
 	* 1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
 	* 2nd Maintainer: MISSING
-	* Testcases: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html)
-	* Tester: mglaubitz
+	* Testcases: [mstuder](http://www.ilias.de/docu/goto_docu_usr_8473.html)
+	* Tester: [marko.glaubitz](http://www.ilias.de/docu/goto_docu_usr_28309.html)
 	* Used in Directories: Services/ActiveRecord, Services/FileDelivery, Modules/Bibliographic, 
 
 
 The following directories are currently maintained unter the Classic-Maintenace-Model:
 * Modules/Blog
  (1st Maintainer: MISSING)
+* Services/Notes
+ (1st Maintainer: MISSING)
 * Services/Language
  (1st Maintainer: MISSING)
 * Modules/MediaCast
  (1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html))
-* Services/AuthShibboleth
- (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+* Services/Tagging
+ (1st Maintainer: [akill](http://www.ilias.de/docu/goto_docu_usr_27631.html))
 * Services/BackgroundTask
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
 * Services/FileDelivery
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
 * Services/GlobalCache
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
-* Services/WebAccessChecker
+* Services/AuthShibboleth
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
 * Services/ActiveRecord
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
@@ -263,6 +277,8 @@ The following directories are currently maintained unter the Classic-Maintenace-
 * Modules/Cloud
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
 * Modules/OrgUnit
+ (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
+* Services/WebAccessChecker
  (1st Maintainer: [fschmid](http://www.ilias.de/docu/goto_docu_usr_21087.html))
 * Modules/StudyProgramme
  (1st Maintainer: [rklees](http://www.ilias.de/docu/goto_docu_usr_34047.html))
@@ -388,7 +404,6 @@ The following directories are currently unmaintained:
 * Services/Multilingualism
 * Services/Navigation
 * Services/News
-* Services/Notes
 * Services/Notification
 * Services/Notifications
 * Services/Object
@@ -415,7 +430,6 @@ The following directories are currently unmaintained:
 * Services/Survey
 * Services/SystemCheck
 * Services/Table
-* Services/Tagging
 * Services/Taxonomy
 * Services/TermsOfService
 * Services/Tracking
