@@ -45,7 +45,7 @@ class MarkdownWriter {
 	 * @param \League\Flysystem\Filesystem $filesystem
 	 * @param string $path_to_file
 	 */
-	public function writeMD(Filesystem $filesystem, $path_to_file = 'Customizing/global/tools/maintainers/maintainers.md') {
+	public function writeMD(Filesystem $filesystem, $path_to_file = 'docs/documentation/maintenance.md') {
 		if (!$filesystem->has($path_to_file)) {
 			$filesystem->write($path_to_file, '');
 		}
@@ -58,7 +58,11 @@ class MarkdownWriter {
 	* Tester: [Matthias Kunkel]
 		 */
 
-		$md = "The code base is deviced in several components which are maintained in the Classic-Maintenance-Model:\n";
+		// $md = "The code base is deviced in several components which are maintained in the Classic-Maintenance-Model:\n";
+
+		$seperator = "<!-- REMOVE -->";
+		$md = strstr($filesystem->read($path_to_file), $seperator, true) . $seperator . "\n";
+
 		$components = $this->getCollector()->getComponents();
 		sort($components);
 		foreach ($components as $component) {
@@ -67,11 +71,39 @@ class MarkdownWriter {
 			if ($name == 'All' || $name == 'None') {
 				continue;
 			}
+			if ($component->getModel() == Directory::SERVICE) {
+				continue;
+			}
 			$md .= "* **{$name}**\n";
 			$md .= "\t* 1st Maintainer: {$component->getFirstMaintainerOrMissing()}\n";
 			$md .= "\t* 2nd Maintainer: {$component->getSecondMaintainerOrMissing()}\n";
 			$md .= "\t* Testcases: {$component->getTestcaseWriterOrMissing()}\n";
 			$md .= "\t* Tester: {$component->getTesterOrMissing()}\n";
+			$md .= "\t* Used in Directories: ";
+			foreach ($component->getDirectories() as $directory) {
+				$md .= "{$directory->getPath()}, ";
+			}
+
+			$md .= "\n";
+		}
+
+		$md .= "\nComponents in the Service-Maintenance-Model:\n";
+
+		foreach ($components as $component) {
+			$component->populate();
+			$name = $component->getName();
+			if ($name == 'All' || $name == 'None') {
+				continue;
+			}
+			if ($component->getModel() == Directory::CLASSIC) {
+				continue;
+			}
+			$md .= "* **{$name}**\n";
+			$md .= "\t* Coordinators:";
+			foreach ($component->getCoordinators() as $coordinator) {
+				$md .= $coordinator->getLinkedProfile() . ' ';
+			}
+			$md .= "\n";
 			$md .= "\t* Used in Directories: ";
 			foreach ($component->getDirectories() as $directory) {
 				$md .= "{$directory->getPath()}, ";
