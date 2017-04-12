@@ -44,7 +44,7 @@
         "name": "Calendar",
         "first_maintainer": "smeyer(191)",
         "second_maintainer": "akill(27631)",
-        "tester": "",
+        "tester": "berggold",
         "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
@@ -54,8 +54,8 @@
         "name": "Category and Repository",
         "first_maintainer": "akill(27631)",
         "second_maintainer": "smeyer(191)",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "miriamhoelscher",
+        "testcase_writer": "kunkel",
         "model": "Classic",
         "coordinators": []
     },
@@ -466,9 +466,9 @@
             "Services/WebAccessChecker"
         ],
         "name": "Certificate",
-        "first_maintainer": "",
+        "first_maintainer": "mjansen",
         "second_maintainer": "",
-        "tester": "",
+        "tester": "christian.hueser",
         "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
