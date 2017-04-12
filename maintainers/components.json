@@ -44,7 +44,7 @@
         "name": "Calendar",
         "first_maintainer": "smeyer(191)",
         "second_maintainer": "akill(27631)",
-        "tester": "berggold",
+        "tester": "berggold(22199)",
         "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
@@ -54,8 +54,8 @@
         "name": "Category and Repository",
         "first_maintainer": "akill(27631)",
         "second_maintainer": "smeyer(191)",
-        "tester": "miriamhoelscher",
-        "testcase_writer": "kunkel",
+        "tester": "miriamhoelscher(25370)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -64,8 +64,8 @@
         "name": "Competence Management",
         "first_maintainer": "akill(27631)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "wolfganghuebsch(18455)",
+        "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
     },
@@ -74,18 +74,8 @@
         "name": "Contacts",
         "first_maintainer": "mjansen(8784)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Course Management": {
-        "directories": [],
-        "name": "Course Management",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "AntoniaWeber(36934)",
+        "testcase_writer": "suittenpointner(3458)",
         "model": "Classic",
         "coordinators": []
     },
@@ -227,9 +217,21 @@
         ],
         "name": "Cloud Object",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "amstutz(26468)",
+        "second_maintainer": "",
         "tester": "amstutz(26468)",
         "testcase_writer": "ttruffer(42894)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Course Management": {
+        "directories": [
+            "Modules/Course"
+        ],
+        "name": "Course Management",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(27631)",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "iLUB Universität Bern",
         "model": "Classic",
         "coordinators": []
     },
@@ -466,9 +468,9 @@
             "Services/WebAccessChecker"
         ],
         "name": "Certificate",
-        "first_maintainer": "mjansen",
+        "first_maintainer": "mjansen(8784)",
         "second_maintainer": "",
-        "tester": "christian.hueser",
+        "tester": "christian.hueser(41129)",
         "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
@@ -479,9 +481,9 @@
         ],
         "name": "Chat",
         "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "second_maintainer": "mbecker(27266)",
+        "tester": "AntoniaWeber(36934)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
