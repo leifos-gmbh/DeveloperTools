@@ -2,10 +2,10 @@
     "Administration": {
         "directories": [],
         "name": "Administration",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -444,8 +444,8 @@
         "name": "Badges",
         "first_maintainer": "akill(27631)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "Thomas.schroeder(38330)",
+        "tester": "Thomas.schroeder(38330)",
+        "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
     },
@@ -653,10 +653,10 @@
             "Modules/Blog"
         ],
         "name": "Blog",
-        "first_maintainer": "fschmid(21087)",
+        "first_maintainer": "akill(27631)",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": "",
+        "testcase_writer": "KlausVorkauf(5890)",
         "model": "Classic",
         "coordinators": []
     },
