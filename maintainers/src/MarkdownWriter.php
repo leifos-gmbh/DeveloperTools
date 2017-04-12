@@ -83,10 +83,10 @@ class MarkdownWriter {
 			$md .= "\t* 2nd Maintainer: {$component->getSecondMaintainerOrMissing()}\n";
 			$md .= "\t* Testcases: {$component->getTestcaseWriterOrMissing()}\n";
 			$md .= "\t* Tester: {$component->getTesterOrMissing()}\n";
-			$md .= "\t* Used in Directories: ";
-			foreach ($component->getDirectories() as $directory) {
-				$md .= "{$directory->getPath()}, ";
-			}
+			//			$md .= "\t* Used in Directories: ";
+			//			foreach ($component->getDirectories() as $directory) {
+			//				$md .= "{$directory->getPath()}, ";
+			//			}
 
 			$md .= "\n";
 		}
