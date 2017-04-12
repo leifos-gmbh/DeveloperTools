@@ -2,17 +2,17 @@
     "Administration": {
         "directories": [],
         "name": "Administration",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "fschmid(21087)",
-        "tester": "fschmid(21087)",
-        "testcase_writer": "fschmid(21087)",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
     "Authentication & Registration": {
         "directories": [],
         "name": "Authentication & Registration",
-        "first_maintainer": "",
+        "first_maintainer": "smeyer(191)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -202,7 +202,7 @@
     "User": {
         "directories": [],
         "name": "User",
-        "first_maintainer": "",
+        "first_maintainer": "smeyer(191)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -238,7 +238,7 @@
             "Services/ActiveRecord"
         ],
         "name": "ActiveRecord",
-        "first_maintainer": "",
+        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -310,7 +310,7 @@
             "Services/Database"
         ],
         "name": "Database",
-        "first_maintainer": "",
+        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -334,7 +334,7 @@
             "Services/FileDelivery"
         ],
         "name": "Style",
-        "first_maintainer": "fschmid(21087)",
+        "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
