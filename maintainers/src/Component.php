@@ -302,11 +302,32 @@ class Component extends JsonSerializable {
 		$this->model = $model;
 	}
 
+
+	/**
+	 * @return \ILIAS\Tools\Maintainers\Maintainer[]
+	 */
+	public function getCoordinators(): array {
+		return $this->coordinators;
+	}
+
+
+	/**
+	 * @param \ILIAS\Tools\Maintainers\Maintainer[] $coordinators
+	 */
+	public function setCoordinators(array $coordinators) {
+		$this->coordinators = $coordinators;
+	}
+
+
 	protected function populateMaintainers() {
 		$this->first_maintainer = Maintainer::fromString($this->first_maintainer);
 		$this->second_maintainer = Maintainer::fromString($this->second_maintainer);
 		$this->tester = Maintainer::fromString($this->tester);
 		$this->testcase_writer = Maintainer::fromString($this->testcase_writer);
+
+		foreach ($this->coordinators as $k => $coordinator) {
+			$this->coordinators[$k] = Maintainer::fromString($coordinator);
+		}
 	}
 
 
@@ -315,5 +336,8 @@ class Component extends JsonSerializable {
 		$this->second_maintainer = Maintainer::stringify($this->second_maintainer);
 		$this->tester = Maintainer::stringify($this->tester);
 		$this->testcase_writer = Maintainer::stringify($this->testcase_writer);
+		foreach ($this->coordinators as $k => $coordinator) {
+			$this->coordinators[$k] = Maintainer::stringify($coordinator);
+		}
 	}
 }

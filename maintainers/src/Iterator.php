@@ -83,6 +83,12 @@ class Iterator {
 	}
 
 
+	public function loadFiles() {
+		Maintainer::loadMaintainerJson($this->filesystem);
+		Component::loadComponentsJson($this->filesystem);
+	}
+
+
 	/**
 	 * @return array
 	 */
@@ -100,8 +106,7 @@ class Iterator {
 	 * @param array $directories
 	 */
 	public function runFor(array $directories, CLImate $cli = null) {
-		Maintainer::loadMaintainerJson($this->filesystem);
-		Component::loadComponentsJson($this->filesystem);
+		$this->loadFiles();
 		foreach ($directories as $directory) {
 			$this->run($directory, $cli);
 		}

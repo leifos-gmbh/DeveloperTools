@@ -2,7 +2,6 @@
 
 namespace ILIAS\Tools\Maintainers;
 
-use PhpParser\Error;
 
 /**
  * Class Directory
