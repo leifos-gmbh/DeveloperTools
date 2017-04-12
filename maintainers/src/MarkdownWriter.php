@@ -74,6 +74,10 @@ class MarkdownWriter {
 			if ($component->getModel() == Directory::SERVICE) {
 				continue;
 			}
+
+			if (!$component->getFirstMaintainer() && !$component->getSecondMaintainer()) {
+				continue;
+			}
 			$md .= "* **{$name}**\n";
 			$md .= "\t* 1st Maintainer: {$component->getFirstMaintainerOrMissing()}\n";
 			$md .= "\t* 2nd Maintainer: {$component->getSecondMaintainerOrMissing()}\n";
