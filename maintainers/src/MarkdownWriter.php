@@ -99,7 +99,7 @@ class MarkdownWriter {
 				continue;
 			}
 			$md .= "* **{$name}**\n";
-			$md .= "\t* Coordinators:";
+			$md .= "\t* Coordinators: ";
 			foreach ($component->getCoordinators() as $coordinator) {
 				$md .= $coordinator->getLinkedProfile() . ' ';
 			}
