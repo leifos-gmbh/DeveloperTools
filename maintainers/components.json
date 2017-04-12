@@ -739,5 +739,17 @@
         "testcase_writer": "tloewen(41553)",
         "model": "Classic",
         "coordinators": []
+    },
+    "MathJax": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "MathJax",
+        "first_maintainer": "fneumann(1560)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "fneumann(1560)",
+        "model": "Classic",
+        "coordinators": []
     }
 }
