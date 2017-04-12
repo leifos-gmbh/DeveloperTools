@@ -9,16 +9,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Authentication & Registration": {
-        "directories": [],
-        "name": "Authentication & Registration",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Bookmarks": {
         "directories": [],
         "name": "Bookmarks",
@@ -149,13 +139,13 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Language Handling": {
+    "Learning Module ILIAS": {
         "directories": [],
-        "name": "Language Handling",
-        "first_maintainer": "",
+        "name": "Learning Module ILIAS",
+        "first_maintainer": "akill(27631)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "suittenpointner(3458)",
+        "testcase_writer": "suittenpointner(3458)",
         "model": "Classic",
         "coordinators": []
     },
@@ -371,6 +361,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Language": {
+        "directories": [
+            "Services/GlobalCache"
+        ],
+        "name": "Language",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Object": {
         "directories": [
             "Services/GlobalCache"
@@ -402,6 +404,18 @@
         "name": "Info Page",
         "first_maintainer": "akill(27631)",
         "second_maintainer": "smeyer(191)",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Language Handling": {
+        "directories": [
+            "Services/Language"
+        ],
+        "name": "Language Handling",
+        "first_maintainer": "",
+        "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
@@ -496,10 +510,10 @@
             "Services/WebAccessChecker"
         ],
         "name": "Learning Module HTML",
-        "first_maintainer": "",
+        "first_maintainer": "akill(27631)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "Balliel(18365)",
+        "testcase_writer": "Balliel(18365)",
         "model": "Classic",
         "coordinators": []
     },
@@ -640,19 +654,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Language": {
-        "directories": [
-            "Services/GlobalCache",
-            "Services/Language"
-        ],
-        "name": "Language",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Blog": {
         "directories": [
             "Services/WebAccessChecker",
@@ -704,6 +705,20 @@
         "second_maintainer": "",
         "tester": "kim.schmidt(28720)",
         "testcase_writer": "mstuder(8473)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Login, Auth & Registration": {
+        "directories": [
+            "Services/AuthApache",
+            "Services/Authentication",
+            "Services/Init"
+        ],
+        "name": "Login, Auth & Registration",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
