@@ -75,7 +75,7 @@ class MarkdownWriter {
 				continue;
 			}
 
-			if (!$component->getFirstMaintainer() && !$component->getSecondMaintainer()) {
+			if (!$component->getFirstMaintainer()->getUsername() && !$component->getSecondMaintainer()->getUsername()) {
 				continue;
 			}
 			$md .= "* **{$name}**\n";
