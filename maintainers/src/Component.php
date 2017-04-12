@@ -79,7 +79,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @var string
 	 */
-	protected $modell = Directory::CLASSIC;
+	protected $model = Directory::CLASSIC;
 	/**
 	 * @var \ILIAS\Tools\Maintainers\Maintainer[]
 	 */
@@ -286,6 +286,21 @@ class Component extends JsonSerializable {
 		$this->directories = array_keys($this->directories);
 	}
 
+
+	/**
+	 * @return string
+	 */
+	public function getModel(): string {
+		return $this->model;
+	}
+
+
+	/**
+	 * @param string $model
+	 */
+	public function setModel(string $model) {
+		$this->model = $model;
+	}
 
 	protected function populateMaintainers() {
 		$this->first_maintainer = Maintainer::fromString($this->first_maintainer);
