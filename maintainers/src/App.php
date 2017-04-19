@@ -45,7 +45,9 @@ class App {
 				$this->cli->out("Available Components:\n\n");
 
 				$c = array();
-				foreach (Component::getRegistredInstances() as $component) {
+				$components = Component::getRegistredInstances();
+				ksort($components);
+				foreach ($components as $component) {
 					$c[] = array(
 						'name'  => $component->getName(),
 						'model' => $component->getModel(),
@@ -63,10 +65,12 @@ class App {
 				$this->cli->out("Available Maintainers:\n\n");
 
 				$c = array();
-				foreach (Maintainer::getRegisteredMaintainers() as $maintainer) {
+				$maintainers = Maintainer::getRegisteredMaintainers();
+				ksort($maintainers);
+				foreach ($maintainers as $maintainer) {
 					$c[] = array(
 						'username' => $maintainer->getUsername(),
-						'user-id'    => $maintainer->getUserId(),
+						'user-id'  => $maintainer->getUserId(),
 					);
 				}
 
@@ -86,6 +90,27 @@ class App {
 				                  . ' components');
 
 				$this->cli->out("Writing MD-File");
+				break;
+			case 'rename':
+				$this->cli->arguments->add([
+					'from' => [
+						'prefix'     => 'f',
+						'longPrefix' => 'from',
+						'required'   => true,
+					],
+					'to'   => [
+						'prefix'     => 't',
+						'longPrefix' => 'to',
+						'required'   => true,
+					],
+				]);
+				$this->cli->arguments->parse();
+
+				$from = $this->cli->arguments->get('from');
+				$to = $this->cli->arguments->get('to');
+
+				$MaintenanceReader = new Iterator($this->cli->arguments->get('path'));
+				$MaintenanceReader->runFor(array( 'Services', 'Modules', 'src' ), null, $from, $to);
 				break;
 		}
 	}

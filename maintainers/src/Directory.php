@@ -76,7 +76,9 @@ class Directory extends JsonSerializable {
 
 				$related_maintainers = $this->belong_to_component instanceof Component
 				                       && ($this->belong_to_component->getFirstMaintainer()
-				                                                     ->getUsername());
+				                                                     ->getUsername() != ''
+				                           || $this->belong_to_component->getSecondMaintainer()
+				                                                        ->getUsername() != '');
 
 				return ($direct_maintainers || $related_maintainers);
 			case self::SERVICE:
@@ -84,6 +86,27 @@ class Directory extends JsonSerializable {
 			default:
 				return false;
 		}
+	}
+
+
+	/**
+	 * @param $from
+	 * @param $to
+	 * @return bool
+	 */
+	public function renameComponent($from, $to) {
+		$this->populate();
+
+		foreach ($this->getUsedinComponents() as $k => $component) {
+			if ($component->getName() == $from) {
+				$this->used_in_components[$k] = Component::getInstance($to);
+			}
+		}
+		if ($this->getBelongToComponent()->getName() == $from) {
+			$this->setBelongToComponent(Component::getInstance($to));
+		}
+
+		return true;
 	}
 
 
@@ -267,7 +290,7 @@ class Directory extends JsonSerializable {
 	}
 
 
-	protected function populateComponents() {
+	private function populateComponents() {
 		foreach ($this->used_in_components as $k => $component) {
 			$c = Component::getInstance($component);
 			$c->addDirectory($this);
@@ -279,7 +302,7 @@ class Directory extends JsonSerializable {
 	}
 
 
-	protected function populateMaintainers() {
+	private function populateMaintainers() {
 		$this->first_maintainer = Maintainer::fromString($this->first_maintainer);
 		$this->second_maintainer = Maintainer::fromString($this->second_maintainer);
 		$this->coordinator = Maintainer::fromString($this->coordinator);
@@ -291,7 +314,7 @@ class Directory extends JsonSerializable {
 	}
 
 
-	protected function stringifyMaintainers() {
+	private function stringifyMaintainers() {
 		$this->first_maintainer = Maintainer::stringify($this->first_maintainer);
 		$this->second_maintainer = Maintainer::stringify($this->second_maintainer);
 		$this->coordinator = Maintainer::stringify($this->coordinator);
@@ -303,7 +326,7 @@ class Directory extends JsonSerializable {
 	}
 
 
-	protected function stringifyComponents() {
+	private function stringifyComponents() {
 		foreach ($this->used_in_components as $k => $component) {
 			$this->used_in_components[$k] = $component->getName();
 		}

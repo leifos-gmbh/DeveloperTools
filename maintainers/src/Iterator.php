@@ -51,7 +51,7 @@ class Iterator {
 	 * @param $directory
 	 * @param \League\CLImate\CLImate|null $cli
 	 */
-	protected function run($directory, CLImate $cli = null) {
+	protected function run($directory, CLImate $cli = null, $from = null, $to = null) {
 		foreach ($this->getFilesystem()->listPaths($directory, false) as $path) {
 			if ($this->getFilesystem()->get($path)->isFile()) {
 				continue;
@@ -68,12 +68,18 @@ class Iterator {
 				$this->getFilesystem()->write($json, $Directory->serializeAsJson());
 			} else {
 				$Directory->unserializeFromJson($this->getFilesystem()->read($json));
+				$Directory->populate();
 				foreach ($Directory->getUsedinComponents() as $Component) {
 					$this->collector->addComponent($Component);
 				}
 				$this->collector->addComponent($Directory->getBelongToComponent());
 			}
 			$Directory->populate();
+			if ($from && $to) {
+				if($cli)
+				$cli->out('Renaming');
+				$Directory->renameComponent($from, $to);
+			}
 			if ($Directory->isMaintained()) {
 				$this->collector->addMaintained($Directory);
 			} else {
@@ -105,11 +111,14 @@ class Iterator {
 
 	/**
 	 * @param array $directories
+	 * @param \League\CLImate\CLImate|null $cli
+	 * @param string $from rename Component
+	 * @param string $to   new name of component
 	 */
-	public function runFor(array $directories, CLImate $cli = null) {
+	public function runFor(array $directories, CLImate $cli = null, $from = null, $to = null) {
 		$this->loadFiles();
 		foreach ($directories as $directory) {
-			$this->run($directory, $cli);
+			$this->run($directory, $cli, $from, $to);
 		}
 		$write = new MarkdownWriter($this->getCollector());
 		$write->writeMD($this->getFilesystem());
