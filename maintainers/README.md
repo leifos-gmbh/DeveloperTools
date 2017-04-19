@@ -59,14 +59,14 @@ We accepted to use this script to identify maintained and unmaintained code in I
 **Step 1:**
 Checkout the DeveloperTool-Repository within your local ILIAS-Repo:
 ```
-$ cd Customizing
+$ cd Customizing/global
 $ git clone https://github.com/ILIAS-eLearning/DeveloperTools tools
 ```
 
 **Step 2:**
 Install the dependencies:
 ```
-$ cd Customizing/global/tools/maintainers
+$ cd tools/maintainers
 $ composer install
 $ sudo apt-get install php7.0-mbstring
 ```
