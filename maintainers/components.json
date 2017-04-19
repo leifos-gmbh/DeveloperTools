@@ -601,6 +601,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "WebDAV": {
+        "directories": [
+            "Services/WebDAV"
+        ],
+        "name": "WebDAV",
+        "first_maintainer": "fawinike(44474)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "UI-Service": {
         "directories": [
             "src/UI"
