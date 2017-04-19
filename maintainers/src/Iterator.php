@@ -80,11 +80,13 @@ class Iterator {
 				$cli->out('Renaming');
 				$Directory->renameComponent($from, $to);
 			}
+			$Directory->inheritMaintainersFromComponent();
 			if ($Directory->isMaintained()) {
 				$this->collector->addMaintained($Directory);
 			} else {
 				$this->collector->addUnmaintained($Directory);
 			}
+
 			$this->getFilesystem()->update($json, $Directory->serializeAsJson());
 		}
 	}

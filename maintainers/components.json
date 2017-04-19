@@ -361,18 +361,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Forum": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "Forum",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "nadia(14206)",
-        "tester": "e.paulmann(8645)",
-        "testcase_writer": "FH Aachen",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Glossary": {
         "directories": [
             "Services/MathJax"
@@ -607,7 +595,7 @@
         ],
         "name": "WebDAV",
         "first_maintainer": "fawinike(44474)",
-        "second_maintainer": "",
+        "second_maintainer": "smeyer(191)",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
@@ -679,6 +667,19 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Forum": {
+        "directories": [
+            "Services/MathJax",
+            "Modules/Forum"
+        ],
+        "name": "Forum",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "nadia(14206)",
+        "tester": "e.paulmann(8645)",
+        "testcase_writer": "FH Aachen",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Certificate": {
         "directories": [
             "Services/MathJax",
@@ -699,19 +700,6 @@
         ],
         "name": "Learning Module SCORM",
         "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Test": {
-        "directories": [
-            "Services/MathJax",
-            "Services/WebAccessChecker"
-        ],
-        "name": "Test",
-        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -799,20 +787,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Test & Assessment": {
-        "directories": [
-            "Services/Tracking",
-            "Modules/Test",
-            "Modules/TestQuestionPool"
-        ],
-        "name": "Test & Assessment",
-        "first_maintainer": "bheyser(14300)",
-        "second_maintainer": "mbecker(27266)",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Bibliographic List Item": {
         "directories": [
             "Services/ActiveRecord",
@@ -825,6 +799,22 @@
         "second_maintainer": "",
         "tester": "marko.glaubitz(28309)",
         "testcase_writer": "mstuder(8473)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Test & Assessment": {
+        "directories": [
+            "Services/MathJax",
+            "Services/Tracking",
+            "Services/WebAccessChecker",
+            "Modules/Test",
+            "Modules/TestQuestionPool"
+        ],
+        "name": "Test & Assessment",
+        "first_maintainer": "bheyser(14300)",
+        "second_maintainer": "mbecker(27266)",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
