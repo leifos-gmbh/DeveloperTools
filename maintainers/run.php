@@ -1,6 +1,5 @@
 <?php
 
-// namespace ILIAS\Tools\Maintainers;
 error_reporting(E_ALL);
 
 use League\CLImate\CLImate;
@@ -15,15 +14,21 @@ $cli->arguments->add([
 		'longPrefix'   => 'path',
 		'description'  => 'base Path of the ILIAS-Installation',
 		'defaultValue' => '/var/www/ilias',
+		'required'     => true,
 	],
 	'cmd'  => [
-		'prefix'       => 'c',
-		'longPrefix'   => 'cmd',
-		'description'  => 'Commands: maintainers, components, generate, usage',
+		'prefix'      => 'c',
+		'longPrefix'  => 'cmd',
+		'description' => 'Commands: maintainers, components, generate, usage',
 	],
 ]);
-$cli->arguments->parse();
-$app = new \ILIAS\Tools\Maintainers\App($cli);
-$app->run();
+
+try {
+	$cli->arguments->parse();
+	$app = new \ILIAS\Tools\Maintainers\App($cli);
+	$app->run();
+} catch (Exception $e) {
+	$cli->shout($e->getMessage());
+}
 
 
