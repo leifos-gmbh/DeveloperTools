@@ -59,7 +59,7 @@ class Collector {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Directory[]
 	 */
-	public function getMaintained(): array {
+	public function getMaintained() {
 		return $this->maintained;
 	}
 
@@ -67,7 +67,7 @@ class Collector {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Directory[]
 	 */
-	public function getUnmaintained(): array {
+	public function getUnmaintained() {
 		return $this->unmaintained;
 	}
 
@@ -99,7 +99,7 @@ class Collector {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Component[]
 	 */
-	public function getComponents(): array {
+	public function getComponents() {
 		return $this->components;
 	}
 
@@ -115,7 +115,7 @@ class Collector {
 	/**
 	 * @return string
 	 */
-	public function getAvailableComponentsAsString(): string {
+	public function getAvailableComponentsAsString() {
 		$av = array_keys($this->getComponents());
 		sort($av);
 
@@ -126,7 +126,7 @@ class Collector {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Directory[]
 	 */
-	public function getByModell($modell): array {
+	public function getByModell($modell) {
 		return $this->by_modell[$modell] ? $this->by_modell[$modell] : array();
 	}
 }

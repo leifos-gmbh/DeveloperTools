@@ -29,7 +29,7 @@ class Maintainer extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getUsername(): string {
+	public function getUsername() {
 		return $this->username;
 	}
 
@@ -37,7 +37,7 @@ class Maintainer extends JsonSerializable {
 	/**
 	 * @param string $username
 	 */
-	public function setUsername(string $username) {
+	public function setUsername($username) {
 		$this->username = $username;
 	}
 
@@ -45,7 +45,7 @@ class Maintainer extends JsonSerializable {
 	/**
 	 * @return int
 	 */
-	public function getUserId(): int {
+	public function getUserId() {
 		return $this->user_id;
 	}
 
@@ -53,7 +53,7 @@ class Maintainer extends JsonSerializable {
 	/**
 	 * @param int $user_id
 	 */
-	public function setUserId(int $user_id) {
+	public function setUserId($user_id) {
 		$this->user_id = $user_id;
 	}
 
@@ -61,7 +61,7 @@ class Maintainer extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getLinkedProfile(): string {
+	public function getLinkedProfile() {
 		switch (true) {
 			case ($this->getUserId() == 0 && $this->getUsername() == ''):
 				return "MISSING";
@@ -165,7 +165,7 @@ class Maintainer extends JsonSerializable {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Maintainer[]
 	 */
-	public static function getRegisteredMaintainers(): array {
+	public static function getRegisteredMaintainers() {
 		return self::$registeredMaintainers;
 	}
 

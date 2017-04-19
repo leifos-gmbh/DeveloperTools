@@ -31,7 +31,7 @@ class Component extends JsonSerializable {
 	 * @param string $name
 	 * @return \ILIAS\Tools\Maintainers\Component
 	 */
-	public static function getInstance($name): Component {
+	public static function getInstance($name) {
 		if (!$name || !is_string($name)) {
 			$name = "None";
 		}
@@ -47,7 +47,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Component[]
 	 */
-	public static function getRegistredInstances(): array {
+	public static function getRegistredInstances() {
 		return self::$registredInstances;
 	}
 
@@ -89,7 +89,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getName(): string {
+	public function getName() {
 		return $this->name;
 	}
 
@@ -97,7 +97,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @param string $name
 	 */
-	public function setName(string $name) {
+	public function setName($name) {
 		$this->name = $name;
 	}
 
@@ -105,7 +105,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Directory[]
 	 */
-	public function getDirectories(): array {
+	public function getDirectories() {
 		return $this->directories;
 	}
 
@@ -183,7 +183,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getFirstMaintainer(): Maintainer {
+	public function getFirstMaintainer() {
 		return $this->first_maintainer;
 	}
 
@@ -191,7 +191,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getFirstMaintainerOrMissing(): string {
+	public function getFirstMaintainerOrMissing() {
 		return $this->getTextOrMissing('first_maintainer');
 	}
 
@@ -207,7 +207,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getSecondMaintainer(): Maintainer {
+	public function getSecondMaintainer() {
 		return $this->second_maintainer;
 	}
 
@@ -215,7 +215,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getSecondMaintainerOrMissing(): string {
+	public function getSecondMaintainerOrMissing() {
 		return $this->getTextOrMissing('second_maintainer');
 	}
 
@@ -231,7 +231,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getTester(): Maintainer {
+	public function getTester() {
 		return $this->tester;
 	}
 
@@ -239,7 +239,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getTesterOrMissing(): string {
+	public function getTesterOrMissing() {
 		return $this->getTextOrMissing('tester');
 	}
 
@@ -255,7 +255,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getTestcaseWriter(): Maintainer {
+	public function getTestcaseWriter() {
 		return $this->testcase_writer;
 	}
 
@@ -263,7 +263,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getTestcaseWriterOrMissing(): string {
+	public function getTestcaseWriterOrMissing() {
 		return $this->getTextOrMissing('testcase_writer');
 	}
 
@@ -290,7 +290,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getModel(): string {
+	public function getModel() {
 		return $this->model;
 	}
 
@@ -298,7 +298,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @param string $model
 	 */
-	public function setModel(string $model) {
+	public function setModel($model) {
 		$this->model = $model;
 	}
 
@@ -306,7 +306,7 @@ class Component extends JsonSerializable {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Maintainer[]
 	 */
-	public function getCoordinators(): array {
+	public function getCoordinators() {
 		return $this->coordinators;
 	}
 

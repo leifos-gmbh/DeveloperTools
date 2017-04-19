@@ -28,7 +28,7 @@ class MarkdownWriter {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Collector
 	 */
-	public function getCollector(): Collector {
+	public function getCollector() {
 		return $this->collector;
 	}
 
@@ -75,7 +75,9 @@ class MarkdownWriter {
 				continue;
 			}
 
-			if (!$component->getFirstMaintainer()->getUsername() && !$component->getSecondMaintainer()->getUsername()) {
+			if (!$component->getFirstMaintainer()->getUsername()
+			    && !$component->getSecondMaintainer()->getUsername()
+			) {
 				continue;
 			}
 			$md .= "* **{$name}**\n";

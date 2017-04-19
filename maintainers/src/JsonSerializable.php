@@ -96,7 +96,7 @@ abstract class JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public static function json_encode($data): string {
+	public static function json_encode($data) {
 		return json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
 		                          | JSON_UNESCAPED_SLASHES);
 	}
@@ -105,7 +105,7 @@ abstract class JsonSerializable {
 	/**
 	 * @return bool
 	 */
-	private final function isPopulated(): bool {
+	private final function isPopulated() {
 		return $this->populated;
 	}
 
@@ -113,7 +113,7 @@ abstract class JsonSerializable {
 	/**
 	 * @param bool $populated
 	 */
-	private final function setPopulated(bool $populated) {
+	private final function setPopulated($populated) {
 		$this->populated = $populated;
 	}
 

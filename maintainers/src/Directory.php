@@ -2,7 +2,6 @@
 
 namespace ILIAS\Tools\Maintainers;
 
-
 /**
  * Class Directory
  *
@@ -91,7 +90,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getMaintenanceModel(): string {
+	public function getMaintenanceModel() {
 		return $this->maintenance_model;
 	}
 
@@ -99,7 +98,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @param string $maintenance_model
 	 */
-	public function setMaintenanceModel(string $maintenance_model) {
+	public function setMaintenanceModel($maintenance_model) {
 		$this->maintenance_model = $maintenance_model;
 	}
 
@@ -107,7 +106,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getFirstMaintainer(): Maintainer {
+	public function getFirstMaintainer() {
 		return $this->first_maintainer;
 	}
 
@@ -123,7 +122,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getSecondMaintainer(): Maintainer {
+	public function getSecondMaintainer() {
 		return $this->second_maintainer;
 	}
 
@@ -139,7 +138,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getTester(): Maintainer {
+	public function getTester() {
 		return $this->tester;
 	}
 
@@ -155,7 +154,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getTestcaseWriter(): Maintainer {
+	public function getTestcaseWriter() {
 		return $this->testcase_writer;
 	}
 
@@ -163,7 +162,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @param string $testcase_writer
 	 */
-	public function setTestcaseWriter(string $testcase_writer) {
+	public function setTestcaseWriter($testcase_writer) {
 		$this->testcase_writer = $testcase_writer;
 	}
 
@@ -171,7 +170,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return string
 	 */
-	public function getPath(): string {
+	public function getPath() {
 		return $this->path;
 	}
 
@@ -179,7 +178,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @param string $path
 	 */
-	public function setPath(string $path) {
+	public function setPath($path) {
 		$this->path = $path;
 	}
 
@@ -187,7 +186,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Component[]
 	 */
-	public function getUsedinComponents(): array {
+	public function getUsedinComponents() {
 		return $this->used_in_components;
 	}
 
@@ -195,7 +194,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return bool
 	 */
-	public function hasComponents(): bool {
+	public function hasComponents() {
 		return ($this->getUsedinComponents() != array( 'None' ));
 	}
 
@@ -211,7 +210,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return Maintainer
 	 */
-	public function getCoordinator(): Maintainer {
+	public function getCoordinator() {
 		return $this->coordinator;
 	}
 
@@ -227,7 +226,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return Maintainer[]
 	 */
-	public function getImplicitMaintainers(): array {
+	public function getImplicitMaintainers() {
 		return $this->implicit_maintainers;
 	}
 
@@ -243,7 +242,7 @@ class Directory extends JsonSerializable {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Component
 	 */
-	public function getBelongToComponent(): Component {
+	public function getBelongToComponent() {
 		return $this->belong_to_component;
 	}
 

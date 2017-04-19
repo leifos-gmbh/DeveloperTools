@@ -78,7 +78,6 @@ class Iterator {
 				$this->collector->addUnmaintained($Directory);
 			}
 			$this->getFilesystem()->update($json, $Directory->serializeAsJson());
-//			$this->getFilesystem()->delete($json);
 		}
 	}
 
@@ -129,7 +128,7 @@ class Iterator {
 	/**
 	 * @return string
 	 */
-	public function getBasePath(): string {
+	public function getBasePath() {
 		return $this->base_path;
 	}
 
@@ -137,7 +136,7 @@ class Iterator {
 	/**
 	 * @param string $base_path
 	 */
-	public function setBasePath(string $base_path) {
+	public function setBasePath($base_path) {
 		$this->base_path = $base_path;
 	}
 
@@ -145,7 +144,7 @@ class Iterator {
 	/**
 	 * @return \League\Flysystem\Filesystem
 	 */
-	public function getFilesystem(): Filesystem {
+	public function getFilesystem() {
 		return $this->filesystem;
 	}
 
@@ -161,7 +160,7 @@ class Iterator {
 	/**
 	 * @return \ILIAS\Tools\Maintainers\Collector
 	 */
-	public function getCollector(): Collector {
+	public function getCollector() {
 		return $this->collector;
 	}
 
