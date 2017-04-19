@@ -1,8 +1,8 @@
 # How to use this script
 First of all use composer to install all dependencies:
 ```
-$ sudo apt-get install php-7.0
-$ composer install php7.0-mbstring
+$ sudo apt-get install php-7.0 php7.0-mbstring
+$ composer install 
 ```
 
 Use the commandline php to run the script:
@@ -60,7 +60,7 @@ We accepted to use this script to identify maintained and unmaintained code in I
 Checkout the DeveloperTool-Repository within your local ILIAS-Repo:
 ```
 $ cd Customizing
-$ git checkout https://github.com/ILIAS-eLearning/DeveloperTools tools
+$ git clone https://github.com/ILIAS-eLearning/DeveloperTools tools
 ```
 
 **Step 2:**
