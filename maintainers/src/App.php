@@ -2,6 +2,8 @@
 
 namespace ILIAS\Tools\Maintainers;
 
+use League\CLImate\CLImate;
+
 /**
  * Class App
  *
@@ -24,7 +26,7 @@ class App {
 	 *
 	 * @param \League\CLImate\CLImate $cli
 	 */
-	public function __construct(\League\CLImate\CLImate $cli) { $this->cli = $cli; }
+	public function __construct(CLImate $cli) { $this->cli = $cli; }
 
 
 	public function run() {
@@ -64,7 +66,7 @@ class App {
 				foreach (Maintainer::getRegisteredMaintainers() as $maintainer) {
 					$c[] = array(
 						'username' => $maintainer->getUsername(),
-						'model'    => $maintainer->getUserId(),
+						'user-id'    => $maintainer->getUserId(),
 					);
 				}
 
