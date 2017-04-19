@@ -40,7 +40,7 @@ class Collector {
 	 * @param \ILIAS\Tools\Maintainers\Directory $directory
 	 */
 	public function addUnmaintained(Directory $directory) {
-		$this->unmaintained[] = $directory;
+		$this->unmaintained[$directory->getPath()] = $directory;
 	}
 
 
@@ -48,11 +48,8 @@ class Collector {
 	 * @param \ILIAS\Tools\Maintainers\Directory $directory
 	 */
 	public function addMaintained(Directory $directory) {
-		$this->maintained[] = $directory;
-		switch ($directory->getMaintenanceModel()) {
-		}
-
-		$this->by_modell[$directory->getMaintenanceModel()][] = $directory;
+		$this->maintained[$directory->getPath()] = $directory;
+		$this->by_modell[$directory->getMaintenanceModel()][$directory->getPath()] = $directory;
 	}
 
 

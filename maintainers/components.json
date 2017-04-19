@@ -19,16 +19,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Category and Repository": {
-        "directories": [],
-        "name": "Category and Repository",
-        "first_maintainer": "akill(27631)",
-        "second_maintainer": "smeyer(191)",
-        "tester": "miriamhoelscher(25370)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Competence Management": {
         "directories": [],
         "name": "Competence Management",
@@ -713,6 +703,19 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Category and Repository": {
+        "directories": [
+            "Services/Repository",
+            "Modules/Category"
+        ],
+        "name": "Category and Repository",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "miriamhoelscher(25370)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },

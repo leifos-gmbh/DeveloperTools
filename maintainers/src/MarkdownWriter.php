@@ -64,7 +64,8 @@ class MarkdownWriter {
 		$md = strstr($filesystem->read($path_to_file), $seperator, true) . $seperator . "\n";
 
 		$components = $this->getCollector()->getComponents();
-		sort($components);
+		ksort($components);
+		
 		foreach ($components as $component) {
 			$component->populate();
 			$name = $component->getName();
@@ -123,7 +124,7 @@ class MarkdownWriter {
 		 * @var $coordinator \ILIAS\Tools\Maintainers\Maintainer
 		 */
 		$directories = $this->getCollector()->getByModell(Directory::CLASSIC);
-		sort($directories);
+		ksort($directories);
 		foreach ($directories as $directory) {
 			$directory->populate();
 
@@ -135,7 +136,7 @@ class MarkdownWriter {
 		 * @var $coordinator \ILIAS\Tools\Maintainers\Maintainer
 		 */
 		$directories1 = $this->getCollector()->getByModell(Directory::SERVICE);
-		sort($directories1);
+		ksort($directories1);
 		foreach ($directories1 as $directory) {
 			$directory->populate();
 

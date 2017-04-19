@@ -2,6 +2,7 @@
 
 namespace ILIAS\Tools\Maintainers;
 
+use ILIAS\Tools\Maintainers\MarkdownWriter;
 use League\CLImate\CLImate;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
@@ -110,7 +111,7 @@ class Iterator {
 		foreach ($directories as $directory) {
 			$this->run($directory, $cli);
 		}
-		$write = new \ILIAS\Tools\Maintainers\MarkdownWriter($this->getCollector());
+		$write = new MarkdownWriter($this->getCollector());
 		$write->writeMD($this->getFilesystem());
 		Maintainer::writeMaintainerJson($this->filesystem);
 		Component::writeComponentsJson($this->filesystem);
