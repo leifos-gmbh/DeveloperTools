@@ -2,6 +2,16 @@
 
 error_reporting(E_ALL);
 
+if (!function_exists('mb_strwidth')) {
+	/**
+	 * @param $string
+	 * @return int
+	 */
+	function mb_strwidth($string) {
+		return strlen($string);
+	}
+}
+
 use League\CLImate\CLImate;
 
 require_once('vendor/autoload.php');
