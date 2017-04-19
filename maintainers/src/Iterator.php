@@ -38,9 +38,6 @@ class Iterator {
 	 * @throws \Exception
 	 */
 	public function __construct($base_path) {
-		if (!is_dir($base_path)) {
-			throw new \Exception("ILIAS base path does not exists. Please specify by using the -p option: php run.php -p /path/to/ilias/root -c command");
-		}
 		$this->base_path = $base_path;
 		$adapter = new Local($this->base_path);
 		$this->filesystem = new Filesystem($adapter);

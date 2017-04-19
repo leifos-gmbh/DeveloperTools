@@ -28,6 +28,10 @@ class App {
 
 
 	public function run() {
+		if (!is_dir($this->cli->arguments->get('path'))) {
+			throw new \Exception("ILIAS base path does not exists. Please specify by using the -p option: php run.php -p /path/to/ilias/root -c command");
+		}
+
 		switch ($this->cli->arguments->get('cmd')) {
 			default:
 				$this->cli->usage();
