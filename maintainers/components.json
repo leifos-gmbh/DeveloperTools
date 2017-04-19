@@ -1,14 +1,4 @@
 {
-    "Administration": {
-        "directories": [],
-        "name": "Administration",
-        "first_maintainer": "akill(27631)",
-        "second_maintainer": "smeyer(191)",
-        "tester": "kunkel(115)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Bookmarks": {
         "directories": [],
         "name": "Bookmarks",
@@ -99,26 +89,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Forum": {
-        "directories": [],
-        "name": "Forum",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "nadia(14206)",
-        "tester": "e.paulmann(8645)",
-        "testcase_writer": "FH Aachen",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Glossary": {
-        "directories": [],
-        "name": "Glossary",
-        "first_maintainer": "akill(27631)",
-        "second_maintainer": "",
-        "tester": "atoedt(3139)",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Group": {
         "directories": [],
         "name": "Group",
@@ -126,26 +96,6 @@
         "second_maintainer": "akill(27631)",
         "tester": "iLUB Universität Bern",
         "testcase_writer": "iLUB Universität Bern",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "ILIAS Page Editor": {
-        "directories": [],
-        "name": "ILIAS Page Editor",
-        "first_maintainer": "akill(27631)",
-        "second_maintainer": "",
-        "tester": "FH Aachen",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Learning Module ILIAS": {
-        "directories": [],
-        "name": "Learning Module ILIAS",
-        "first_maintainer": "akill(27631)",
-        "second_maintainer": "",
-        "tester": "suittenpointner(3458)",
-        "testcase_writer": "suittenpointner(3458)",
         "model": "Classic",
         "coordinators": []
     },
@@ -313,18 +263,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "ilUtil": {
-        "directories": [
-            "Services/FileDelivery"
-        ],
-        "name": "ilUtil",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Component": {
         "directories": [
             "Services/GlobalCache"
@@ -421,6 +359,114 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Administration": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "Administration",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Forum": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "Forum",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "nadia(14206)",
+        "tester": "e.paulmann(8645)",
+        "testcase_writer": "FH Aachen",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Glossary": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "Glossary",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "",
+        "tester": "atoedt(3139)",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "ILIAS Page Editor": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "ILIAS Page Editor",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "",
+        "tester": "FH Aachen",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Learning Module ILIAS": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "Learning Module ILIAS",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "",
+        "tester": "suittenpointner(3458)",
+        "testcase_writer": "suittenpointner(3458)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "MathJax": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "MathJax",
+        "first_maintainer": "fneumann(1560)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "fneumann(1560)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "PDFGeneration": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "PDFGeneration",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Survey": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "Survey",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Wiki": {
+        "directories": [
+            "Services/MathJax"
+        ],
+        "name": "Wiki",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Notes and Comments": {
         "directories": [
             "Services/Notes"
@@ -481,18 +527,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Certificate": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Certificate",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "",
-        "tester": "christian.hueser(41129)",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Chat": {
         "directories": [
             "Services/WebAccessChecker"
@@ -514,18 +548,6 @@
         "second_maintainer": "",
         "tester": "Balliel(18365)",
         "testcase_writer": "Balliel(18365)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Learning Module SCORM": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Learning Module SCORM",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -571,18 +593,6 @@
         ],
         "name": "Portfolio",
         "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Test": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Test",
-        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -654,16 +664,55 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Blog": {
+    "ilUtil": {
         "directories": [
-            "Services/WebAccessChecker",
-            "Modules/Blog"
+            "Services/FileDelivery",
+            "Services/MathJax"
         ],
-        "name": "Blog",
-        "first_maintainer": "akill(27631)",
+        "name": "ilUtil",
+        "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
-        "testcase_writer": "KlausVorkauf(5890)",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Certificate": {
+        "directories": [
+            "Services/MathJax",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Certificate",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "",
+        "tester": "christian.hueser(41129)",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Learning Module SCORM": {
+        "directories": [
+            "Services/MathJax",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Learning Module SCORM",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Test": {
+        "directories": [
+            "Services/MathJax",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Test",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -677,20 +726,6 @@
         "second_maintainer": "fschmid(21087)",
         "tester": "berggold(22199)",
         "testcase_writer": "berggold(22199)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Bibliographic List Item": {
-        "directories": [
-            "Services/ActiveRecord",
-            "Services/FileDelivery",
-            "Modules/Bibliographic"
-        ],
-        "name": "Bibliographic List Item",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "marko.glaubitz(28309)",
-        "testcase_writer": "mstuder(8473)",
         "model": "Classic",
         "coordinators": []
     },
@@ -722,6 +757,35 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Blog": {
+        "directories": [
+            "Services/MathJax",
+            "Services/WebAccessChecker",
+            "Modules/Blog"
+        ],
+        "name": "Blog",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "KlausVorkauf(5890)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Bibliographic List Item": {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/FileDelivery",
+            "Services/MathJax",
+            "Modules/Bibliographic"
+        ],
+        "name": "Bibliographic List Item",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "marko.glaubitz(28309)",
+        "testcase_writer": "mstuder(8473)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "File": {
         "directories": [
             "Services/DiskQuota",
@@ -737,18 +801,6 @@
         "second_maintainer": "akill(27631)",
         "tester": "tloewen(41553)",
         "testcase_writer": "tloewen(41553)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "MathJax": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "MathJax",
-        "first_maintainer": "fneumann(1560)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "fneumann(1560)",
         "model": "Classic",
         "coordinators": []
     }
