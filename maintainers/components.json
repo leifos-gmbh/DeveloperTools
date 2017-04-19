@@ -493,6 +493,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Statistics and Learning Progress": {
+        "directories": [
+            "Services/Tracking"
+        ],
+        "name": "Statistics and Learning Progress",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "suittenpointner(3458)",
+        "testcase_writer": "bromberger(198)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Badges": {
         "directories": [
             "Services/WebAccessChecker"
@@ -582,18 +594,6 @@
             "Services/WebAccessChecker"
         ],
         "name": "Portfolio",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "User Service": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "User Service",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
@@ -731,6 +731,19 @@
         "model": "Classic",
         "coordinators": []
     },
+    "User Service": {
+        "directories": [
+            "Services/User",
+            "Services/WebAccessChecker"
+        ],
+        "name": "User Service",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "MediaCast": {
         "directories": [
             "Services/WebAccessChecker",
@@ -783,6 +796,20 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "KlausVorkauf(5890)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Test & Assessment": {
+        "directories": [
+            "Services/Tracking",
+            "Modules/Test",
+            "Modules/TestQuestionPool"
+        ],
+        "name": "Test & Assessment",
+        "first_maintainer": "bheyser(14300)",
+        "second_maintainer": "mbecker(27266)",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
