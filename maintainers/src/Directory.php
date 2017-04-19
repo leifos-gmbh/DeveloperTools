@@ -104,6 +104,18 @@ class Directory extends JsonSerializable {
 		) {
 			$this->setSecondMaintainer($this->getBelongToComponent()->getSecondMaintainer());
 		}
+		if ($this->getTester()->getUsername() == ''
+		    && $this->getBelongToComponent()->getTester()->getUsername() != ''
+
+		) {
+			$this->setTester($this->getBelongToComponent()->getTester());
+		}
+		if ($this->getTestcaseWriter()->getUsername() == ''
+		    && $this->getBelongToComponent()->getTestcaseWriter()->getUsername() != ''
+
+		) {
+			$this->setTestcaseWriter($this->getBelongToComponent()->getTestcaseWriter());
+		}
 	}
 
 

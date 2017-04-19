@@ -433,18 +433,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Wiki": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "Wiki",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Notes and Comments": {
         "directories": [
             "Services/Notes"
@@ -517,18 +505,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Chat": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Chat",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "mbecker(27266)",
-        "tester": "AntoniaWeber(36934)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Learning Module HTML": {
         "directories": [
             "Services/WebAccessChecker"
@@ -598,6 +574,18 @@
         "second_maintainer": "smeyer(191)",
         "tester": "",
         "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Workflow Engine": {
+        "directories": [
+            "Services/WorkflowEngine"
+        ],
+        "name": "Workflow Engine",
+        "first_maintainer": "mbecker(27266)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "mbecker(27266)",
         "model": "Classic",
         "coordinators": []
     },
@@ -680,6 +668,19 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Wiki": {
+        "directories": [
+            "Services/MathJax",
+            "Modules/Wiki"
+        ],
+        "name": "Wiki",
+        "first_maintainer": "akill(27631)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "abaulig1(44386)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Certificate": {
         "directories": [
             "Services/MathJax",
@@ -729,6 +730,19 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Chat": {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Modules/Chatroom"
+        ],
+        "name": "Chat",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "mbecker(27266)",
+        "tester": "AntoniaWeber(36934)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
