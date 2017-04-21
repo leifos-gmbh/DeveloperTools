@@ -3,7 +3,7 @@
         "directories": [],
         "name": "Bookmarks",
         "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(27631)",
+        "second_maintainer": "akill(149)",
         "tester": "miriamhoelscher(25370)",
         "testcase_writer": "kunkel(115)",
         "model": "Classic",
@@ -13,7 +13,7 @@
         "directories": [],
         "name": "Calendar",
         "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(27631)",
+        "second_maintainer": "akill(149)",
         "tester": "berggold(22199)",
         "testcase_writer": "",
         "model": "Classic",
@@ -22,7 +22,7 @@
     "Competence Management": {
         "directories": [],
         "name": "Competence Management",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "wolfganghuebsch(18455)",
         "testcase_writer": "atoedt(3139)",
@@ -62,7 +62,7 @@
     "Exercise": {
         "directories": [],
         "name": "Exercise",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "miriamwegener(23051)",
         "testcase_writer": "KlausVorkauf(5890)",
@@ -83,7 +83,7 @@
         "directories": [],
         "name": "Group",
         "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(27631)",
+        "second_maintainer": "akill(149)",
         "tester": "iLUB Universität Bern",
         "testcase_writer": "iLUB Universität Bern",
         "model": "Classic",
@@ -114,7 +114,7 @@
             "Modules/BookingManager"
         ],
         "name": "Booking Tool",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "wolfganghuebsch(18455)",
         "testcase_writer": "e.coroian(37215)",
@@ -139,9 +139,21 @@
         ],
         "name": "Course Management",
         "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(27631)",
+        "second_maintainer": "akill(149)",
         "tester": "iLUB Universität Bern",
         "testcase_writer": "iLUB Universität Bern",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "IndividualAssessment": {
+        "directories": [
+            "Modules/IndividualAssessment"
+        ],
+        "name": "IndividualAssessment",
+        "first_maintainer": "rklees(34047)",
+        "second_maintainer": "dkloepfer(42712)",
+        "tester": "kunkel(115)",
+        "testcase_writer": "dkloepfer(42712)",
         "model": "Classic",
         "coordinators": []
     },
@@ -210,7 +222,7 @@
             "Services/Component"
         ],
         "name": "Plugin Slots",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "fschmid(21087)",
         "tester": "PerPascalGrube(31492)",
         "testcase_writer": "",
@@ -330,7 +342,7 @@
             "Services/InfoScreen"
         ],
         "name": "Info Page",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "smeyer(191)",
         "tester": "",
         "testcase_writer": "",
@@ -349,12 +361,24 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Maps": {
+        "directories": [
+            "Services/Maps"
+        ],
+        "name": "Maps",
+        "first_maintainer": "rklees(34047)",
+        "second_maintainer": "dkloepfer(42712)",
+        "tester": "miriamhoelscher(25370)",
+        "testcase_writer": "rklees(34047)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Administration": {
         "directories": [
             "Services/MathJax"
         ],
         "name": "Administration",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "smeyer(191)",
         "tester": "kunkel(115)",
         "testcase_writer": "kunkel(115)",
@@ -366,7 +390,7 @@
             "Services/MathJax"
         ],
         "name": "Glossary",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "atoedt(3139)",
         "testcase_writer": "atoedt(3139)",
@@ -378,7 +402,7 @@
             "Services/MathJax"
         ],
         "name": "ILIAS Page Editor",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "FH Aachen",
         "testcase_writer": "atoedt(3139)",
@@ -390,7 +414,7 @@
             "Services/MathJax"
         ],
         "name": "Learning Module ILIAS",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "suittenpointner(3458)",
         "testcase_writer": "suittenpointner(3458)",
@@ -438,7 +462,7 @@
             "Services/Notes"
         ],
         "name": "Notes and Comments",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "fschmid(21087)",
         "tester": "skaiser(17260)",
         "testcase_writer": "skaiser(17260)",
@@ -462,7 +486,7 @@
             "Services/Tagging"
         ],
         "name": "Tagging",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "mstuder(8473)",
         "tester": "skaiser(17260)",
         "testcase_writer": "skaiser(17260)",
@@ -486,7 +510,7 @@
             "Services/WebAccessChecker"
         ],
         "name": "Badges",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "Thomas.schroeder(38330)",
         "testcase_writer": "atoedt(3139)",
@@ -510,7 +534,7 @@
             "Services/WebAccessChecker"
         ],
         "name": "Learning Module HTML",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "Balliel(18365)",
         "testcase_writer": "Balliel(18365)",
@@ -674,7 +698,7 @@
             "Modules/Wiki"
         ],
         "name": "Wiki",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "abaulig1(44386)",
@@ -713,7 +737,7 @@
             "Modules/Category"
         ],
         "name": "Category and Repository",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "smeyer(191)",
         "tester": "miriamhoelscher(25370)",
         "testcase_writer": "kunkel(115)",
@@ -752,7 +776,7 @@
             "Modules/MediaCast"
         ],
         "name": "MediaCast",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "fschmid(21087)",
         "tester": "berggold(22199)",
         "testcase_writer": "berggold(22199)",
@@ -794,7 +818,7 @@
             "Modules/Blog"
         ],
         "name": "Blog",
-        "first_maintainer": "akill(27631)",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "KlausVorkauf(5890)",
@@ -844,9 +868,9 @@
         ],
         "name": "File",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "akill(27631)",
+        "second_maintainer": "akill(149)",
         "tester": "tloewen(41553)",
-        "testcase_writer": "tloewen(41553)",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     }
