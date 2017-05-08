@@ -89,6 +89,16 @@
         "model": "Classic",
         "coordinators": []
     },
+    "HTTP": {
+        "directories": [],
+        "name": "HTTP",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "RBAC": {
         "directories": [],
         "name": "RBAC",
@@ -610,6 +620,18 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "mbecker(27266)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "HTTP-Request": {
+        "directories": [
+            "src/HTTP"
+        ],
+        "name": "HTTP-Request",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
