@@ -12,6 +12,6 @@ done
 		mkdir composer
 	fi
 	cd composer
-	composer require "squizlabs/php_codesniffer=*"; 
+	composer require "squizlabs/php_codesniffer:<3"
 	composer install
 )
