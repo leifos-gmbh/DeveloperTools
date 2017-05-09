@@ -884,6 +884,7 @@
             "Services/FileDelivery",
             "Services/FileSystem",
             "Services/FileUpload",
+            "Services/Preview",
             "Services/VirusScanner",
             "Services/WebAccessChecker",
             "Modules/File"
