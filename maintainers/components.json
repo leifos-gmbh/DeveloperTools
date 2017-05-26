@@ -107,7 +107,7 @@
         ],
         "name": "Cloud Object",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
+        "second_maintainer": "amstutz(26468)",
         "tester": "amstutz(26468)",
         "testcase_writer": "ttruffer(42894)",
         "model": "Classic",
@@ -209,18 +209,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "GlobalCache": {
-        "directories": [
-            "Services/ActiveRecord"
-        ],
-        "name": "GlobalCache",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "ItemGroup": {
         "directories": [
             "Services/ActiveRecord"
@@ -311,7 +299,7 @@
         ],
         "name": "Database",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
+        "second_maintainer": "smeyer(191)",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
@@ -389,18 +377,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Language": {
-        "directories": [
-            "Services/GlobalCache"
-        ],
-        "name": "Language",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Object": {
         "directories": [
             "Services/GlobalCache"
@@ -444,18 +420,6 @@
         "name": "Info Page",
         "first_maintainer": "akill(149)",
         "second_maintainer": "smeyer(191)",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Language Handling": {
-        "directories": [
-            "Services/Language"
-        ],
-        "name": "Language Handling",
-        "first_maintainer": "",
-        "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
@@ -689,12 +653,24 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Data": {
+        "directories": [
+            "src/Data"
+        ],
+        "name": "Data",
+        "first_maintainer": "rklees(34047)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "HTTP-Request": {
         "directories": [
             "src/HTTP"
         ],
         "name": "HTTP-Request",
-        "first_maintainer": "",
+        "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -754,16 +730,16 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Web Access Checker": {
+    "GlobalCache": {
         "directories": [
             "Services/ActiveRecord",
-            "Services/FileDelivery"
+            "Services/GlobalCache"
         ],
-        "name": "Web Access Checker",
+        "name": "GlobalCache",
         "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "ukohnle(21855)",
-        "tester": "iLUB Universität Bern",
-        "testcase_writer": "ttruffer(42894)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -819,16 +795,16 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Forum": {
+    "Language Handling": {
         "directories": [
-            "Services/MathJax",
-            "Modules/Forum"
+            "Services/GlobalCache",
+            "Services/Language"
         ],
-        "name": "Forum",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "nadia(14206)",
-        "tester": "e.paulmann(8645)",
-        "testcase_writer": "FH Aachen",
+        "name": "Language Handling",
+        "first_maintainer": "kunkel(115)",
+        "second_maintainer": "fneumann(1560)",
+        "tester": "kunkel(115)",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -884,19 +860,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Certificate": {
-        "directories": [
-            "Services/MathJax",
-            "Services/WebAccessChecker"
-        ],
-        "name": "Certificate",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "",
-        "tester": "christian.hueser(41129)",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "SOAP": {
         "directories": [
             "Services/SOAPAuth",
@@ -920,19 +883,6 @@
         "second_maintainer": "akill(149)",
         "tester": "",
         "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Chat": {
-        "directories": [
-            "Services/WebAccessChecker",
-            "Modules/Chatroom"
-        ],
-        "name": "Chat",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "mbecker(27266)",
-        "tester": "AntoniaWeber(36934)",
-        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -1002,6 +952,20 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Web Access Checker": {
+        "directories": [
+            "Services/ActiveRecord",
+            "Services/FileDelivery",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Web Access Checker",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "ukohnle(21855)",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "ttruffer(42894)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Data Collection": {
         "directories": [
             "Services/ActiveRecord",
@@ -1013,6 +977,34 @@
         "second_maintainer": "",
         "tester": "kim.schmidt(28720)",
         "testcase_writer": "mstuder(8473)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Certificate": {
+        "directories": [
+            "Services/Certificate",
+            "Services/MathJax",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Certificate",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "",
+        "tester": "christian.hueser(41129)",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Forum": {
+        "directories": [
+            "Services/Html",
+            "Services/MathJax",
+            "Modules/Forum"
+        ],
+        "name": "Forum",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "nadia(14206)",
+        "tester": "e.paulmann(8645)",
+        "testcase_writer": "FH Aachen",
         "model": "Classic",
         "coordinators": []
     },
@@ -1101,6 +1093,21 @@
         "second_maintainer": "",
         "tester": "suittenpointner(3458)",
         "testcase_writer": "suittenpointner(3458)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Chat": {
+        "directories": [
+            "Services/Notifications",
+            "Services/OnScreenChat",
+            "Services/WebAccessChecker",
+            "Modules/Chatroom"
+        ],
+        "name": "Chat",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "mbecker(27266)",
+        "tester": "AntoniaWeber(36934)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
