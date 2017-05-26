@@ -113,18 +113,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Course Management": {
-        "directories": [
-            "Modules/Course"
-        ],
-        "name": "Course Management",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(149)",
-        "tester": "iLUB Universität Bern",
-        "testcase_writer": "iLUB Universität Bern",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Exercise": {
         "directories": [
             "Modules/Exercise"
@@ -341,18 +329,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Web Feed": {
-        "directories": [
-            "Services/Feeds"
-        ],
-        "name": "Web Feed",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "kunkel(115)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Excel": {
         "directories": [
             "Services/FileDelivery"
@@ -509,54 +485,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Administration": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "Administration",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "smeyer(191)",
-        "tester": "kunkel(115)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Glossary": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "Glossary",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "atoedt(3139)",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "ILIAS Page Editor": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "ILIAS Page Editor",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "FH Aachen",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Learning Module ILIAS": {
-        "directories": [
-            "Services/MathJax"
-        ],
-        "name": "Learning Module ILIAS",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "Balliel(18365)",
-        "testcase_writer": "Balliel(18365)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "MathJax": {
         "directories": [
             "Services/MathJax"
@@ -581,18 +509,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "News": {
-        "directories": [
-            "Services/News"
-        ],
-        "name": "News",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "Thomas.schroeder(38330)",
-        "testcase_writer": "Thomas.schroeder(38330)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Notes and Comments": {
         "directories": [
             "Services/Notes"
@@ -614,18 +530,6 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "My Workspace": {
-        "directories": [
-            "Services/PersonalWorkspace"
-        ],
-        "name": "My Workspace",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "KlausVorkauf(5890)",
-        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -725,18 +629,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Learning Module HTML": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Learning Module HTML",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "suittenpointner(3458)",
-        "testcase_writer": "suittenpointner(3458)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Media Objects": {
         "directories": [
             "Services/WebAccessChecker"
@@ -770,18 +662,6 @@
         "second_maintainer": "smeyer(191)",
         "tester": "",
         "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "ECS Interface": {
-        "directories": [
-            "Services/WebServices"
-        ],
-        "name": "ECS Interface",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "",
-        "tester": "bogen(13815)",
-        "testcase_writer": "bogen(13815)",
         "model": "Classic",
         "coordinators": []
     },
@@ -835,6 +715,19 @@
             "amstutz(26468)"
         ]
     },
+    "Course Management": {
+        "directories": [
+            "Modules/Course",
+            "Modules/CourseReference"
+        ],
+        "name": "Course Management",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(149)",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "iLUB Universität Bern",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Organisational Units": {
         "directories": [
             "Services/ActiveRecord",
@@ -874,6 +767,45 @@
         "model": "Classic",
         "coordinators": []
     },
+    "ILIAS Page Editor": {
+        "directories": [
+            "Services/COPage",
+            "Services/MathJax"
+        ],
+        "name": "ILIAS Page Editor",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "FH Aachen",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "News": {
+        "directories": [
+            "Services/Cache",
+            "Services/News"
+        ],
+        "name": "News",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "Thomas.schroeder(38330)",
+        "testcase_writer": "Thomas.schroeder(38330)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Web Feed": {
+        "directories": [
+            "Services/Feeds",
+            "Modules/ExternalFeed"
+        ],
+        "name": "Web Feed",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "ilUtil": {
         "directories": [
             "Services/FileDelivery",
@@ -900,6 +832,45 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Glossary": {
+        "directories": [
+            "Services/MathJax",
+            "Modules/Glossary"
+        ],
+        "name": "Glossary",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "atoedt(3139)",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Learning Module ILIAS": {
+        "directories": [
+            "Services/MathJax",
+            "Modules/LearningModule"
+        ],
+        "name": "Learning Module ILIAS",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "Balliel(18365)",
+        "testcase_writer": "Balliel(18365)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Administration": {
+        "directories": [
+            "Services/MathJax",
+            "Modules/SystemFolder"
+        ],
+        "name": "Administration",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Wiki": {
         "directories": [
             "Services/MathJax",
@@ -923,19 +894,6 @@
         "second_maintainer": "",
         "tester": "christian.hueser(41129)",
         "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Category and Repository": {
-        "directories": [
-            "Services/Repository",
-            "Modules/Category"
-        ],
-        "name": "Category and Repository",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "smeyer(191)",
-        "tester": "miriamhoelscher(25370)",
-        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -975,6 +933,19 @@
         "second_maintainer": "mbecker(27266)",
         "tester": "AntoniaWeber(36934)",
         "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Learning Module HTML": {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Modules/HTMLLearningModule"
+        ],
+        "name": "Learning Module HTML",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "suittenpointner(3458)",
+        "testcase_writer": "suittenpointner(3458)",
         "model": "Classic",
         "coordinators": []
     },
@@ -1045,20 +1016,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Survey": {
-        "directories": [
-            "Services/MathJax",
-            "Modules/Survey",
-            "Modules/SurveyQuestionPool"
-        ],
-        "name": "Survey",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "e.coroian(37215)",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Blog": {
         "directories": [
             "Services/MathJax",
@@ -1070,6 +1027,20 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "KlausVorkauf(5890)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "My Workspace": {
+        "directories": [
+            "Services/PersonalWorkspace",
+            "Modules/WorkspaceFolder",
+            "Modules/WorkspaceRootFolder"
+        ],
+        "name": "My Workspace",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "KlausVorkauf(5890)",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -1103,6 +1074,21 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Survey": {
+        "directories": [
+            "Services/MathJax",
+            "Services/Survey",
+            "Modules/Survey",
+            "Modules/SurveyQuestionPool"
+        ],
+        "name": "Survey",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "e.coroian(37215)",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Learning Module SCORM": {
         "directories": [
             "Services/MathJax",
@@ -1115,6 +1101,21 @@
         "second_maintainer": "",
         "tester": "suittenpointner(3458)",
         "testcase_writer": "suittenpointner(3458)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Category and Repository": {
+        "directories": [
+            "Services/Repository",
+            "Modules/Category",
+            "Modules/CategoryReference",
+            "Modules/RootFolder"
+        ],
+        "name": "Category and Repository",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "miriamhoelscher(25370)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -1150,6 +1151,26 @@
         "second_maintainer": "akill(149)",
         "tester": "tloewen(41553)",
         "testcase_writer": "tloewen(41553)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "ECS Interface": {
+        "directories": [
+            "Services/WebServices",
+            "Modules/RemoteCategory",
+            "Modules/RemoteCourse",
+            "Modules/RemoteFile",
+            "Modules/RemoteGlossary",
+            "Modules/RemoteGroup",
+            "Modules/RemoteLearningModule",
+            "Modules/RemoteTest",
+            "Modules/RemoteWiki"
+        ],
+        "name": "ECS Interface",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "bogen(13815)",
+        "testcase_writer": "bogen(13815)",
         "model": "Classic",
         "coordinators": []
     }
