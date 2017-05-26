@@ -276,7 +276,7 @@
         "name": "Contacts",
         "first_maintainer": "mjansen(8784)",
         "second_maintainer": "",
-        "tester": "AntoniaWeber(36934)",
+        "tester": "abaulig1(44386)",
         "testcase_writer": "suittenpointner(3458)",
         "model": "Classic",
         "coordinators": []
@@ -947,8 +947,8 @@
         "name": "Metadata",
         "first_maintainer": "smeyer(191)",
         "second_maintainer": "",
-        "tester": "AntoniaWeber(36934)",
-        "testcase_writer": "AntoniaWeber(36934)",
+        "tester": "abaulig1(44386)",
+        "testcase_writer": "abaulig1(44386)",
         "model": "Classic",
         "coordinators": []
     },
@@ -1106,7 +1106,7 @@
         "name": "Chat",
         "first_maintainer": "mjansen(8784)",
         "second_maintainer": "mbecker(27266)",
-        "tester": "AntoniaWeber(36934)",
+        "tester": "abaulig1(44386)",
         "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
