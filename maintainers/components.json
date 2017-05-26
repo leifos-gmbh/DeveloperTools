@@ -9,16 +9,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Calendar": {
-        "directories": [],
-        "name": "Calendar",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(149)",
-        "tester": "berggold(22199)",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Competence Management": {
         "directories": [],
         "name": "Competence Management",
@@ -26,66 +16,6 @@
         "second_maintainer": "",
         "tester": "wolfganghuebsch(18455)",
         "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Contacts": {
-        "directories": [],
-        "name": "Contacts",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "",
-        "tester": "AntoniaWeber(36934)",
-        "testcase_writer": "suittenpointner(3458)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Cron Service": {
-        "directories": [],
-        "name": "Cron Service",
-        "first_maintainer": "mjansen(8784)",
-        "second_maintainer": "bheyser(14300)",
-        "tester": "",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "ECS Interface": {
-        "directories": [],
-        "name": "ECS Interface",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "",
-        "tester": "bogen(13815)",
-        "testcase_writer": "bogen(13815)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Exercise": {
-        "directories": [],
-        "name": "Exercise",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "miriamwegener(23051)",
-        "testcase_writer": "KlausVorkauf(5890)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Export": {
-        "directories": [],
-        "name": "Export",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "",
-        "tester": "Fabian(27631)",
-        "testcase_writer": "Fabian(27631)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Group": {
-        "directories": [],
-        "name": "Group",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(149)",
-        "tester": "iLUB Universität Bern",
-        "testcase_writer": "iLUB Universität Bern",
         "model": "Classic",
         "coordinators": []
     },
@@ -99,23 +29,63 @@
         "model": "Classic",
         "coordinators": []
     },
-    "RBAC": {
+    "Personal Profile": {
         "directories": [],
-        "name": "RBAC",
+        "name": "Personal Profile",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "Fabian(27631)",
+        "testcase_writer": "Fabian(27631)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Precondition Handling": {
+        "directories": [],
+        "name": "Precondition Handling",
         "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "SCORM Offline Player": {
+        "directories": [],
+        "name": "SCORM Offline Player",
+        "first_maintainer": "ukohnle(21855)",
+        "second_maintainer": "sschneider(21741)",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "SCORM Online Editor": {
+        "directories": [],
+        "name": "SCORM Online Editor",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "pellemanns",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Setup": {
+        "directories": [],
+        "name": "Setup",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "smeyer(191)",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
-    "User": {
+    "Who is online?": {
         "directories": [],
-        "name": "User",
-        "first_maintainer": "smeyer(191)",
+        "name": "Who is online?",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "amersch(15114)",
+        "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
     },
@@ -155,6 +125,30 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Exercise": {
+        "directories": [
+            "Modules/Exercise"
+        ],
+        "name": "Exercise",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "miriamwegener(23051)",
+        "testcase_writer": "KlausVorkauf(5890)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Group": {
+        "directories": [
+            "Modules/Group"
+        ],
+        "name": "Group",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(149)",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "iLUB Universität Bern",
+        "model": "Classic",
+        "coordinators": []
+    },
     "IndividualAssessment": {
         "directories": [
             "Modules/IndividualAssessment"
@@ -164,6 +158,54 @@
         "second_maintainer": "dkloepfer(42712)",
         "tester": "kunkel(115)",
         "testcase_writer": "dkloepfer(42712)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Media Pool": {
+        "directories": [
+            "Modules/MediaPool"
+        ],
+        "name": "Media Pool",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Session": {
+        "directories": [
+            "Modules/Session"
+        ],
+        "name": "Session",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "iLUB Universität Bern",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Weblink": {
+        "directories": [
+            "Modules/WebResource"
+        ],
+        "name": "Weblink",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "nadine.bauser(34662)",
+        "testcase_writer": "nadine.bauser(34662)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "RBAC": {
+        "directories": [
+            "Services/AccessControl"
+        ],
+        "name": "RBAC",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -227,6 +269,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Calendar": {
+        "directories": [
+            "Services/Calendar"
+        ],
+        "name": "Calendar",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(149)",
+        "tester": "berggold(22199)",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Plugin Slots": {
         "directories": [
             "Services/Component"
@@ -239,6 +293,30 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Contacts": {
+        "directories": [
+            "Services/Contact"
+        ],
+        "name": "Contacts",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "",
+        "tester": "AntoniaWeber(36934)",
+        "testcase_writer": "suittenpointner(3458)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Cron Service": {
+        "directories": [
+            "Services/Cron"
+        ],
+        "name": "Cron Service",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "bheyser(14300)",
+        "tester": "",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Database": {
         "directories": [
             "Services/Database"
@@ -248,6 +326,30 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Export": {
+        "directories": [
+            "Services/Export"
+        ],
+        "name": "Export",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "Fabian(27631)",
+        "testcase_writer": "Fabian(27631)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Web Feed": {
+        "directories": [
+            "Services/Feeds"
+        ],
+        "name": "Web Feed",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -347,6 +449,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Online Help": {
+        "directories": [
+            "Services/Help"
+        ],
+        "name": "Online Help",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(149)",
+        "tester": "",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Info Page": {
         "directories": [
             "Services/InfoScreen"
@@ -368,6 +482,18 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Mail": {
+        "directories": [
+            "Services/Mail"
+        ],
+        "name": "Mail",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "nadia(14206)",
+        "tester": "amersch(15114)",
+        "testcase_writer": "amersch(15114)",
         "model": "Classic",
         "coordinators": []
     },
@@ -426,8 +552,8 @@
         "name": "Learning Module ILIAS",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "suittenpointner(3458)",
-        "testcase_writer": "suittenpointner(3458)",
+        "tester": "Balliel(18365)",
+        "testcase_writer": "Balliel(18365)",
         "model": "Classic",
         "coordinators": []
     },
@@ -438,7 +564,7 @@
         "name": "MathJax",
         "first_maintainer": "fneumann(1560)",
         "second_maintainer": "",
-        "tester": "",
+        "tester": "claudio.fischer(41113)",
         "testcase_writer": "fneumann(1560)",
         "model": "Classic",
         "coordinators": []
@@ -455,15 +581,15 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Survey": {
+    "News": {
         "directories": [
-            "Services/MathJax"
+            "Services/News"
         ],
-        "name": "Survey",
-        "first_maintainer": "",
+        "name": "News",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "Thomas.schroeder(38330)",
+        "testcase_writer": "Thomas.schroeder(38330)",
         "model": "Classic",
         "coordinators": []
     },
@@ -479,6 +605,54 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Personal Desktop": {
+        "directories": [
+            "Services/PersonalDesktop"
+        ],
+        "name": "Personal Desktop",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "My Workspace": {
+        "directories": [
+            "Services/PersonalWorkspace"
+        ],
+        "name": "My Workspace",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "KlausVorkauf(5890)",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Rating": {
+        "directories": [
+            "Services/Rating"
+        ],
+        "name": "Rating",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "Fabian(27631)",
+        "testcase_writer": "Fabian(27631)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Search": {
+        "directories": [
+            "Services/Search"
+        ],
+        "name": "Search",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "FH Aachen",
+        "model": "Classic",
+        "coordinators": []
+    },
     "CSS / Templates": {
         "directories": [
             "Services/Style"
@@ -488,6 +662,18 @@
         "second_maintainer": "amstutz(26468)",
         "tester": "fschmid(21087)",
         "testcase_writer": "Fabian(27631)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "System Check": {
+        "directories": [
+            "Services/SystemCheck"
+        ],
+        "name": "System Check",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -546,8 +732,8 @@
         "name": "Learning Module HTML",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "Balliel(18365)",
-        "testcase_writer": "Balliel(18365)",
+        "tester": "suittenpointner(3458)",
+        "testcase_writer": "suittenpointner(3458)",
         "model": "Classic",
         "coordinators": []
     },
@@ -575,30 +761,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Poll": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Poll",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Portfolio": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Portfolio",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "WebDAV": {
         "directories": [
             "Services/WebDAV"
@@ -606,6 +768,30 @@
         "name": "WebDAV",
         "first_maintainer": "fawinike(44474)",
         "second_maintainer": "smeyer(191)",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "ECS Interface": {
+        "directories": [
+            "Services/WebServices"
+        ],
+        "name": "ECS Interface",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "bogen(13815)",
+        "testcase_writer": "bogen(13815)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Webservices": {
+        "directories": [
+            "Services/WebServices"
+        ],
+        "name": "Webservices",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
@@ -740,19 +926,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Learning Module SCORM": {
-        "directories": [
-            "Services/MathJax",
-            "Services/WebAccessChecker"
-        ],
-        "name": "Learning Module SCORM",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Category and Repository": {
         "directories": [
             "Services/Repository",
@@ -766,6 +939,19 @@
         "model": "Classic",
         "coordinators": []
     },
+    "SOAP": {
+        "directories": [
+            "Services/SOAPAuth",
+            "Services/WebServices"
+        ],
+        "name": "SOAP",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "mjansen(8784)",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "User Service": {
         "directories": [
             "Services/User",
@@ -773,7 +959,7 @@
         ],
         "name": "User Service",
         "first_maintainer": "smeyer(191)",
-        "second_maintainer": "",
+        "second_maintainer": "akill(149)",
         "tester": "",
         "testcase_writer": "",
         "model": "Classic",
@@ -805,6 +991,46 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Poll": {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Modules/Poll"
+        ],
+        "name": "Poll",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Portfolio": {
+        "directories": [
+            "Services/WebAccessChecker",
+            "Modules/Portfolio"
+        ],
+        "name": "Portfolio",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "KlausVorkauf(5890)",
+        "testcase_writer": "KlausVorkauf(5890)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Metadata": {
+        "directories": [
+            "Services/ADT",
+            "Services/AdvancedMetaData",
+            "Services/MetaData"
+        ],
+        "name": "Metadata",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "AntoniaWeber(36934)",
+        "testcase_writer": "AntoniaWeber(36934)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Data Collection": {
         "directories": [
             "Services/ActiveRecord",
@@ -819,17 +1045,17 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Login, Auth & Registration": {
+    "Survey": {
         "directories": [
-            "Services/AuthApache",
-            "Services/Authentication",
-            "Services/Init"
+            "Services/MathJax",
+            "Modules/Survey",
+            "Modules/SurveyQuestionPool"
         ],
-        "name": "Login, Auth & Registration",
-        "first_maintainer": "smeyer(191)",
+        "name": "Survey",
+        "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "e.coroian(37215)",
+        "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
     },
@@ -862,6 +1088,36 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Login, Auth & Registration": {
+        "directories": [
+            "Services/AuthApache",
+            "Services/Authentication",
+            "Services/CAS",
+            "Services/Init"
+        ],
+        "name": "Login, Auth & Registration",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "bheyser(14300)",
+        "tester": "",
+        "testcase_writer": "FH Aachen",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Learning Module SCORM": {
+        "directories": [
+            "Services/MathJax",
+            "Services/WebAccessChecker",
+            "Modules/Scorm2004",
+            "Modules/ScormAicc"
+        ],
+        "name": "Learning Module SCORM",
+        "first_maintainer": "ukohnle(21855)",
+        "second_maintainer": "",
+        "tester": "suittenpointner(3458)",
+        "testcase_writer": "suittenpointner(3458)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Test & Assessment": {
         "directories": [
             "Services/MathJax",
@@ -873,8 +1129,8 @@
         "name": "Test & Assessment",
         "first_maintainer": "bheyser(14300)",
         "second_maintainer": "mbecker(27266)",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "SIG EA",
+        "testcase_writer": "Fabian(27631)",
         "model": "Classic",
         "coordinators": []
     },
@@ -893,7 +1149,7 @@
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "akill(149)",
         "tester": "tloewen(41553)",
-        "testcase_writer": "",
+        "testcase_writer": "tloewen(41553)",
         "model": "Classic",
         "coordinators": []
     }
