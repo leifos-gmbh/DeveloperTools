@@ -63,7 +63,8 @@ class MarkdownWriter {
 		$seperator = "<!-- REMOVE -->";
 		$md = strstr($filesystem->read($path_to_file), $seperator, true) . $seperator . "\n";
 
-		$components = $this->getCollector()->getComponents();
+//		$components = $this->getCollector()->getComponents();
+		$components =Component::getRegistredInstances();
 		ksort($components);
 		
 		foreach ($components as $component) {
