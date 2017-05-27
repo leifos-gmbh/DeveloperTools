@@ -1,21 +1,11 @@
 {
-    "Bookmarks": {
+    "Data": {
         "directories": [],
-        "name": "Bookmarks",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(149)",
-        "tester": "miriamhoelscher(25370)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Competence Management": {
-        "directories": [],
-        "name": "Competence Management",
-        "first_maintainer": "akill(149)",
+        "name": "Data",
+        "first_maintainer": "rklees(34047)",
         "second_maintainer": "",
-        "tester": "wolfganghuebsch(18455)",
-        "testcase_writer": "atoedt(3139)",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -79,16 +69,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Who is online?": {
-        "directories": [],
-        "name": "Who is online?",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "amersch(15114)",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Booking Tool": {
         "directories": [
             "Modules/BookingManager"
@@ -122,18 +102,6 @@
         "second_maintainer": "",
         "tester": "miriamwegener(23051)",
         "testcase_writer": "KlausVorkauf(5890)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Group": {
-        "directories": [
-            "Modules/Group"
-        ],
-        "name": "Group",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(149)",
-        "tester": "iLUB Universität Bern",
-        "testcase_writer": "iLUB Universität Bern",
         "model": "Classic",
         "coordinators": []
     },
@@ -209,18 +177,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "ItemGroup": {
-        "directories": [
-            "Services/ActiveRecord"
-        ],
-        "name": "ItemGroup",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Shibboleth Authentication": {
         "directories": [
             "Services/AuthShibboleth"
@@ -230,6 +186,18 @@
         "second_maintainer": "",
         "tester": "iLUB Universität Bern",
         "testcase_writer": "iLUB Universität Bern",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Who is online?": {
+        "directories": [
+            "Services/Awareness"
+        ],
+        "name": "Who is online?",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "amersch(15114)",
+        "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
     },
@@ -245,15 +213,15 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Calendar": {
+    "Bookmarks": {
         "directories": [
-            "Services/Calendar"
+            "Services/Bookmarks"
         ],
-        "name": "Calendar",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "akill(149)",
-        "tester": "berggold(22199)",
-        "testcase_writer": "",
+        "name": "Bookmarks",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "miriamhoelscher(25370)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -521,6 +489,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Competence Management": {
+        "directories": [
+            "Services/Skill"
+        ],
+        "name": "Competence Management",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "wolfganghuebsch(18455)",
+        "testcase_writer": "atoedt(3139)",
+        "model": "Classic",
+        "coordinators": []
+    },
     "CSS / Templates": {
         "directories": [
             "Services/Style"
@@ -557,6 +537,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Taxonomy": {
+        "directories": [
+            "Services/Taxonomy"
+        ],
+        "name": "Taxonomy",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Statistics and Learning Progress": {
         "directories": [
             "Services/Tracking"
@@ -569,35 +561,11 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Badges": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Badges",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "",
-        "tester": "Thomas.schroeder(38330)",
-        "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Booking Manager": {
         "directories": [
             "Services/WebAccessChecker"
         ],
         "name": "Booking Manager",
-        "first_maintainer": "",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "Media Objects": {
-        "directories": [
-            "Services/WebAccessChecker"
-        ],
-        "name": "Media Objects",
         "first_maintainer": "",
         "second_maintainer": "",
         "tester": "",
@@ -653,18 +621,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Data": {
-        "directories": [
-            "src/Data"
-        ],
-        "name": "Data",
-        "first_maintainer": "rklees(34047)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
-        "model": "Classic",
-        "coordinators": []
-    },
     "HTTP-Request": {
         "directories": [
             "src/HTTP"
@@ -704,6 +660,32 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Group": {
+        "directories": [
+            "Modules/Group",
+            "Modules/GroupReference"
+        ],
+        "name": "Group",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(149)",
+        "tester": "iLUB Universität Bern",
+        "testcase_writer": "iLUB Universität Bern",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "ItemGroup": {
+        "directories": [
+            "Services/ActiveRecord",
+            "Modules/ItemGroup"
+        ],
+        "name": "ItemGroup",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Organisational Units": {
         "directories": [
             "Services/ActiveRecord",
@@ -740,6 +722,19 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Badges": {
+        "directories": [
+            "Services/Badge",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Badges",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "Thomas.schroeder(38330)",
+        "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
     },
@@ -834,19 +829,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Administration": {
-        "directories": [
-            "Services/MathJax",
-            "Modules/SystemFolder"
-        ],
-        "name": "Administration",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "smeyer(191)",
-        "tester": "kunkel(115)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Wiki": {
         "directories": [
             "Services/MathJax",
@@ -857,6 +839,19 @@
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "abaulig1(44386)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Media Objects": {
+        "directories": [
+            "Services/MediaObjects",
+            "Services/WebAccessChecker"
+        ],
+        "name": "Media Objects",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -980,6 +975,34 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Administration": {
+        "directories": [
+            "Services/Administration",
+            "Services/MathJax",
+            "Modules/SystemFolder"
+        ],
+        "name": "Administration",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Calendar": {
+        "directories": [
+            "Services/Booking",
+            "Services/Cache",
+            "Services/Calendar"
+        ],
+        "name": "Calendar",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "akill(149)",
+        "tester": "berggold(22199)",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Certificate": {
         "directories": [
             "Services/Certificate",
@@ -1051,21 +1074,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Login, Auth & Registration": {
-        "directories": [
-            "Services/AuthApache",
-            "Services/Authentication",
-            "Services/CAS",
-            "Services/Init"
-        ],
-        "name": "Login, Auth & Registration",
-        "first_maintainer": "smeyer(191)",
-        "second_maintainer": "bheyser(14300)",
-        "tester": "",
-        "testcase_writer": "FH Aachen",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Survey": {
         "directories": [
             "Services/MathJax",
@@ -1111,21 +1119,6 @@
         "model": "Classic",
         "coordinators": []
     },
-    "Category and Repository": {
-        "directories": [
-            "Services/Repository",
-            "Modules/Category",
-            "Modules/CategoryReference",
-            "Modules/RootFolder"
-        ],
-        "name": "Category and Repository",
-        "first_maintainer": "akill(149)",
-        "second_maintainer": "smeyer(191)",
-        "tester": "miriamhoelscher(25370)",
-        "testcase_writer": "kunkel(115)",
-        "model": "Classic",
-        "coordinators": []
-    },
     "Test & Assessment": {
         "directories": [
             "Services/MathJax",
@@ -1139,6 +1132,41 @@
         "second_maintainer": "mbecker(27266)",
         "tester": "SIG EA",
         "testcase_writer": "Fabian(27631)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Login, Auth & Registration": {
+        "directories": [
+            "Services/AuthApache",
+            "Services/Authentication",
+            "Services/CAS",
+            "Services/Init",
+            "Services/Radius",
+            "Services/Registration"
+        ],
+        "name": "Login, Auth & Registration",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "bheyser(14300)",
+        "tester": "",
+        "testcase_writer": "FH Aachen",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Category and Repository": {
+        "directories": [
+            "Services/Container",
+            "Services/ContainerReference",
+            "Services/Repository",
+            "Modules/Category",
+            "Modules/CategoryReference",
+            "Modules/Folder",
+            "Modules/RootFolder"
+        ],
+        "name": "Category and Repository",
+        "first_maintainer": "akill(149)",
+        "second_maintainer": "smeyer(191)",
+        "tester": "miriamhoelscher(25370)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
