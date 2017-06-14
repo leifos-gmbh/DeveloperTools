@@ -54,7 +54,7 @@
         "name": "SCORM Online Editor",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "pellemanns",
+        "tester": "Hester(31687)",
         "testcase_writer": "atoedt(3139)",
         "model": "Classic",
         "coordinators": []
@@ -64,8 +64,8 @@
         "name": "Setup",
         "first_maintainer": "akill(149)",
         "second_maintainer": "smeyer(191)",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "aarsenij(41159)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -232,7 +232,7 @@
         "name": "Plugin Slots",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "rklees(34047)",
-        "tester": "PerPascalGrube(31492)",
+        "tester": "",
         "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
@@ -544,8 +544,8 @@
         "name": "Taxonomy",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "Tested separately in each module that supports taxonomies",
+        "testcase_writer": "Tested separately in each module that supports taxonomies",
         "model": "Classic",
         "coordinators": []
     },
@@ -837,7 +837,7 @@
         "name": "Wiki",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
+        "tester": "abaulig1(44386)",
         "testcase_writer": "abaulig1(44386)",
         "model": "Classic",
         "coordinators": []
@@ -850,8 +850,8 @@
         "name": "Media Objects",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
+        "tester": "kunkel(115)",
+        "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
     },
@@ -928,8 +928,8 @@
         "name": "Portfolio",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "KlausVorkauf(5890)",
-        "testcase_writer": "KlausVorkauf(5890)",
+        "tester": "KlausVorkauf and Oliver Samoila (Portfolio Template)",
+        "testcase_writer": "KlausVorkauf and Oliver Samoila (Portfolio Template)",
         "model": "Classic",
         "coordinators": []
     },
@@ -942,8 +942,8 @@
         "name": "Metadata",
         "first_maintainer": "smeyer(191)",
         "second_maintainer": "",
-        "tester": "abaulig1(44386)",
-        "testcase_writer": "abaulig1(44386)",
+        "tester": "daniela.weber(40672)",
+        "testcase_writer": "daniela.weber(40672)",
         "model": "Classic",
         "coordinators": []
     },
@@ -970,7 +970,7 @@
         "name": "Data Collection",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
-        "tester": "kim.schmidt(28720)",
+        "tester": "kim.herms(28720)",
         "testcase_writer": "mstuder(8473)",
         "model": "Classic",
         "coordinators": []
@@ -1013,7 +1013,7 @@
         "first_maintainer": "mjansen(8784)",
         "second_maintainer": "",
         "tester": "christian.hueser(41129)",
-        "testcase_writer": "",
+        "testcase_writer": "christian.hueser(41129)",
         "model": "Classic",
         "coordinators": []
     },
@@ -1040,7 +1040,7 @@
         "name": "Blog",
         "first_maintainer": "akill(149)",
         "second_maintainer": "",
-        "tester": "",
+        "tester": "PaBer(33766)",
         "testcase_writer": "KlausVorkauf(5890)",
         "model": "Classic",
         "coordinators": []
@@ -1114,7 +1114,7 @@
         "name": "Chat",
         "first_maintainer": "mjansen(8784)",
         "second_maintainer": "mbecker(27266)",
-        "tester": "abaulig1(44386)",
+        "tester": "elenak(49160)",
         "testcase_writer": "kunkel(115)",
         "model": "Classic",
         "coordinators": []
@@ -1130,8 +1130,8 @@
         "name": "Test & Assessment",
         "first_maintainer": "bheyser(14300)",
         "second_maintainer": "mbecker(27266)",
-        "tester": "SIG EA",
-        "testcase_writer": "Fabian(27631)",
+        "tester": "Claudia Dehling and SIG EA",
+        "testcase_writer": "Fabian Kruse and SIG EA",
         "model": "Classic",
         "coordinators": []
     },
