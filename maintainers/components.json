@@ -1124,6 +1124,8 @@
             "Services/MathJax",
             "Services/Tracking",
             "Services/WebAccessChecker",
+            "Services/Math",
+            "Services/QTI",
             "Modules/Test",
             "Modules/TestQuestionPool"
         ],
