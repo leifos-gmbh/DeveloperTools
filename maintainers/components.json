@@ -9,10 +9,40 @@
         "model": "Classic",
         "coordinators": []
     },
+    "Didactic Templates": {
+        "directories": [],
+        "name": "Didactic Templates",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "HTTP": {
         "directories": [],
         "name": "HTTP",
         "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Logging": {
+        "directories": [],
+        "name": "Logging",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Membership": {
+        "directories": [],
+        "name": "Membership",
+        "first_maintainer": "smeyer(191)",
         "second_maintainer": "",
         "tester": "",
         "testcase_writer": "",
@@ -66,6 +96,16 @@
         "second_maintainer": "smeyer(191)",
         "tester": "aarsenij(41159)",
         "testcase_writer": "kunkel(115)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "Tree": {
+        "directories": [],
+        "name": "Tree",
+        "first_maintainer": "smeyer(191)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -1124,8 +1164,6 @@
             "Services/MathJax",
             "Services/Tracking",
             "Services/WebAccessChecker",
-            "Services/Math",
-            "Services/QTI",
             "Modules/Test",
             "Modules/TestQuestionPool"
         ],
