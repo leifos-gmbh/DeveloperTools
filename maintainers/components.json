@@ -29,6 +29,16 @@
         "model": "Classic",
         "coordinators": []
     },
+    "LTI": {
+        "directories": [],
+        "name": "LTI",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Logging": {
         "directories": [],
         "name": "Logging",
@@ -238,18 +248,6 @@
         "second_maintainer": "",
         "tester": "amersch(15114)",
         "testcase_writer": "atoedt(3139)",
-        "model": "Classic",
-        "coordinators": []
-    },
-    "BackgroundTasks": {
-        "directories": [
-            "Services/BackgroundTask"
-        ],
-        "name": "BackgroundTasks",
-        "first_maintainer": "fschmid(21087)",
-        "second_maintainer": "",
-        "tester": "",
-        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -481,6 +479,18 @@
         "model": "Classic",
         "coordinators": []
     },
+    "MyStaff": {
+        "directories": [
+            "Services/MyStaff"
+        ],
+        "name": "MyStaff",
+        "first_maintainer": "",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
     "Notes and Comments": {
         "directories": [
             "Services/Notes"
@@ -514,6 +524,18 @@
         "second_maintainer": "",
         "tester": "Fabian(27631)",
         "testcase_writer": "Fabian(27631)",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "SAML": {
+        "directories": [
+            "Services/Saml"
+        ],
+        "name": "SAML",
+        "first_maintainer": "mjansen(8784)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
         "model": "Classic",
         "coordinators": []
     },
@@ -758,6 +780,19 @@
             "Services/GlobalCache"
         ],
         "name": "GlobalCache",
+        "first_maintainer": "fschmid(21087)",
+        "second_maintainer": "",
+        "tester": "",
+        "testcase_writer": "",
+        "model": "Classic",
+        "coordinators": []
+    },
+    "BackgroundTasks": {
+        "directories": [
+            "Services/BackgroundTask",
+            "Services/BackgroundTasks"
+        ],
+        "name": "BackgroundTasks",
         "first_maintainer": "fschmid(21087)",
         "second_maintainer": "",
         "tester": "",
@@ -1181,6 +1216,7 @@
             "Services/Authentication",
             "Services/CAS",
             "Services/Init",
+            "Services/LDAP",
             "Services/Radius",
             "Services/Registration"
         ],
