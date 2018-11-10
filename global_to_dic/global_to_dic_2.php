@@ -151,6 +151,14 @@ class ClassInfo
 		"ilAppEventHandler" => array(
 			"property" => "app_event_handler",
 			"type" => "ilAppEventHandler"
+		),
+		"array_sortorder" => array(
+			"property" => "array_sortorder",
+			"type" => "array_sortorder"
+		),
+		"array_sortby" => array(
+			"property" => "array_sortby",
+			"type" => "array_sortby"
 		)
 	);
 
@@ -850,7 +858,7 @@ class DicCodeModifier
 						$g = str_replace('$', "", trim($g));
 						if (!isset(ClassInfo::$globals[$g]))
 						{
-							die ("Unknown global found: $g");
+							die ("Unknown global found: $g in ".$a_info["class"]->name." (constructor) ");
 						}
 						if ($g != "DIC")
 						{
@@ -883,7 +891,7 @@ class DicCodeModifier
 							$g = str_replace('$', "", trim($g));
 							if (!isset(ClassInfo::$globals[$g]))
 							{
-								die ("Unknown global found: $g");
+								die ("Unknown global found: $g in ".$a_info["class"]->name." (".$a_info["methods"][$this->getCurrentMethod()]->name.") ");
 							}
 							if ($g != "DIC")
 							{
